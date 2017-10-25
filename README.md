@@ -18,9 +18,16 @@
 
 # 加入我们
 
-* QQ 群：541957278
-* 管理员微信号：CorvoH
-* 欢迎在本仓库中点击 “Star”
+如果你愿意加入我们一起协作，有如下些许建议：
+
+* 点击右上角 ```fork``` 将仓库克隆到你的账号下，并在合适的时候提交 PR
+* 推荐使用 [gitflow](http://danielkummer.github.io/git-flow-cheatsheet/) 来管理你的分支
+* 推荐使用 [gitmoji](https://gitmoji.carloscuesta.me/) 来生动化你的 Git Commit
+
+更多资讯：
+
+* “西邮前端圈” QQ 群：541957278
+* 如果觉得这个项目不错的话，欢迎在本仓库中点击 ```Star```
 
 # LICENSE
 
