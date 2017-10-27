@@ -1,4 +1,31 @@
-#hello {
-	color: #509dd7;
-	text-align: center;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    text-align: center;
+}
+
+#rootTitle {
+    color: #509dd7;
+}
+
+#appMenu {
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+#appMenu .menuItem {
+    margin: 0 2px 0 2px;
+}
+
+img {
+    margin: 20px 0 20px 0;
+    height: 122px;
+    width: 122px;
+}
+
+#actionButton {
+    text-align: center;
 }
