@@ -1,31 +1,127 @@
 body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #34495e;
+    font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
+    font-size: 15px;
+    letter-spacing: 0;
     margin: 0;
-    padding: 0;
+    overflow-x: hidden;
 }
 
 #root {
     text-align: center;
 }
 
-#rootTitle {
-    color: #509dd7;
+section.cover.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
-#appMenu {
-    margin: 10px 0 10px 0;
+section.cover {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+    display: none;
+}
+
+section.cover .cover-main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: -20px 16px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+section.cover h1 {
+    color: inherit;
+    font-size: 40px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 10px 0 40px;
+    margin: .625rem 0 2.5rem;
+    position: relative;
+    text-align: center;
+}
+
+section.cover h1 a {
+    display: block;
+}
+
+section.cover a, section.cover a:hover {
+    text-decoration: none;
+}
+
+.anchor span {
+    color: #34495e;
+}
+
+section.cover h1 small {
+    bottom: -7px;
+    bottom: -.4375rem;
+    font-size: 16px;
+    font-size: 1rem;
+    position: absolute;
+}
+
+section.cover blockquote {
+    font-size: 24px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+section.cover p {
+    line-height: 24px;
+    line-height: 1.5rem;
+    margin: 1em 0;
+}
+
+section.cover ul {
+    line-height: 1.8;
+    list-style-type: none;
+    margin: 1em auto;
+    max-width: 500px;
     padding: 0;
 }
 
-#appMenu .menuItem {
-    margin: 0 2px 0 2px;
+section.cover .cover-main>p:last-child a:last-child {
+    background-color: #42b983;
+    background-color: var(--theme-color,#42b983);
+    color: #fff;
+    margin-right: 0;
 }
 
-img {
-    margin: 20px 0 20px 0;
-    height: 122px;
-    width: 122px;
+section.cover .cover-main>p:last-child a {
+    border-color: #42b983;
+    border: 1px solid var(--theme-color,#42b983);
+    border-radius: 2rem;
+    box-sizing: border-box;
+    color: #42b983;
+    color: var(--theme-color,#42b983);
+    display: inline-block;
+    font-size: 16.8px;
+    font-size: 1.05rem;
+    letter-spacing: 1.6px;
+    letter-spacing: .1rem;
+    margin-right: 16px;
+    margin-right: 1rem;
+    padding: .75em 32px;
+    padding: .75em 2rem;
+    text-decoration: none;
+    transition: all .15s ease;
 }
 
-#actionButton {
-    text-align: center;
+#pageOne {
+    background: linear-gradient(to left bottom, hsl(244, 100%, 85%) 0%,hsl(77, 100%, 85%) 100%);
+}
+
+#pageTwo {
+    background: linear-gradient(to left bottom, hsl(244, 100%, 85%) 0%,hsl(77, 100%, 85%) 100%);
+}
+
+#pageThree {
+    background: linear-gradient(to left bottom, hsl(244, 100%, 85%) 0%,hsl(77, 100%, 85%) 100%);
 }
