@@ -2,7 +2,7 @@
   background: linear-gradient(to left bottom, hsl(244, 100%, 85%) 0%,hsl(77, 100%, 85%) 100%);
 }
 
-#card1 .cover-main {
+#card1 .card1Wrap {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -62,13 +62,13 @@
   padding: 0;
 }
 
-#card1 .cover-main>p:last-child a:last-child {
+#card1 .card1Wrap>p:last-child a:last-child {
   background-color: #42b983;
   color: #fff;
   margin-right: 0;
 }
 
-#card1 .cover-main>p:last-child a {
+#card1 .card1Wrap>p:last-child a {
   border-color: #42b983;
   border: 2px solid #42b983;
   border-radius: 2rem;
@@ -112,8 +112,8 @@
 
 @media screen and (min-width: 430px) {
   #dialog img {
-    width: 36rem;
-    height: 50rem;
+    width: 28.8rem; /* 36rem * 0.8 */
+    height: 40rem; /* 50rem * 0.8 */
   }
 }
 
