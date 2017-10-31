@@ -1,31 +1,41 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
 
-#root {
-    text-align: center;
+@media screen and (min-width: 430px) {
+    html {
+        font-size: 15px;
+    }
 }
 
-#rootTitle {
-    color: #509dd7;
+@media screen and (max-width: 430px) {
+    html {
+        font-size: 10px;
+    }
 }
 
-#appMenu {
-    margin: 10px 0 10px 0;
-    padding: 0;
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #34495e;
+    font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
-#appMenu .menuItem {
-    margin: 0 2px 0 2px;
+a {
+    color: #34495e;
+    text-decoration: none;
 }
 
-img {
-    margin: 20px 0 20px 0;
-    height: 122px;
-    width: 122px;
-}
-
-#actionButton {
-    text-align: center;
+.card {
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }

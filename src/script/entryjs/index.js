@@ -1,7 +1,17 @@
-import '../../image/robot.png'
+import '../../image/earlyBirds.png'
+import '../../image/qqGroupQR.jpg'
 import '../../style/index.css'
+import '../../style/indexCard1.css'
+import '../../style/indexCard2.css'
+import '../../style/indexCard3.css'
 
-import printMe from '../commonjs/printMe.js'
+import joinUs from '../commonjs/joinUs.js'
 
-let btn = document.getElementById('print')
-btn.onclick = printMe
+var openJoinQR = joinUs.openJoinQR
+var closeJoinQR = joinUs.closeJoinQR
+
+let openJoinQRButton = document.getElementById('openJoinQR')
+openJoinQRButton.onclick = openJoinQR
+
+let closeJoinQRButton = document.getElementById('closeJoinQR')
+closeJoinQRButton.onclick = closeJoinQR
