@@ -64,6 +64,7 @@ module.exports = {
         // .css 文件使用 style-loader 和 css-loader 来处理
         test: /\.css$/,
         exclude: /^node_modules$/,
+        include: path.resolve(__dirname, `src/style/`),
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           publicPath: '../',
