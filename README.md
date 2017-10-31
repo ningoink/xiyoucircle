@@ -16,13 +16,21 @@
 - [ ] “西邮大牛展”：为每一个加盟的学长学姐放入展示块，任何人可以申请加盟
 - [ ] “关于西邮前端圈”：西邮前端圈的宗旨，西邮前端圈的发展时间线、加入西邮前端圈
 
+# 核心贡献者
+
+* [adong11](https://github.com/adong11)
+* [Joe19970619](https://github.com/Joe19970619)
+
 # 加入我们
 
 如果你愿意加入我们一起协作，有如下些许建议：
-
-* 点击右上角 ```fork``` 将仓库克隆到你的账号下，并在合适的时候提交 PR
-* 推荐使用 [gitflow](http://danielkummer.github.io/git-flow-cheatsheet/) 来管理你的分支
-* 推荐使用 [gitmoji](https://gitmoji.carloscuesta.me/) 来生动化你的 Git Commit
+
+* 贡献你的代码：
+  * 点击右上角 ```fork``` 将仓库克隆到你的账号下，并在合适的时候提交 PR
+  * 或直接与我联系，将你加入本仓库的 collaboration 中，在 develop 分支中合作开发。
+* 促进团队高效协作：
+  * 推荐使用 [gitflow](http://danielkummer.github.io/git-flow-cheatsheet/) 来管理你的分支
+  * 推荐使用 [gitmoji](https://gitmoji.carloscuesta.me/) 来生动化你的 Git Commit
 
 更多资讯：
 
