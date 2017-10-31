@@ -9,11 +9,10 @@
     flex: 1;
     margin: 0 1rem 0;
     text-align: center;
-    z-index: 1;
 }
 
 .littleCardWarp {
-    height: 55vh;
+    height: 40vh;
     display: flex;
     flex-direction: row;
     justify-content: center; /* 水平居中 */
@@ -26,7 +25,7 @@
 
 .littleCardItem {
     width: 18rem;
-    height: 22rem;
+    height: 40vh;
     background: white;
     display: inline-block;
 }
@@ -59,8 +58,8 @@
 
 @media screen and (max-width: 430px) {
     .littleCardBigWrap {
-        box-shadow: 3px 3px 30px 5px;
-        z-index: 1;
+        z-index: 9999;
+        box-shadow: 0 0 30px 0;
         width: 20rem;
         height: 24rem;
     }
@@ -106,10 +105,12 @@
 }
 
 .littleCardLoadMore {
-    margin-top: .5rem;
+    height: 20vh;
 }
 
 .littleCardLoadMore button {
+    position: relative;
+    top: 10vh;
     color: white;
     border: none;
     background-color: #9da0a7;

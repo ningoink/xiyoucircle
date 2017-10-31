@@ -46,6 +46,14 @@ a {
     overflow: hidden;
 }
 
+.card#card3 {
+    height: auto;
+}
+
+.cardHeaderWrap {
+    height: 20vh;
+}
+
 .cardHeader {
     color: #000;
     line-height: 1.33rem;
@@ -70,12 +78,26 @@ a {
 
 @media screen and (min-width: 430px) {
     .cardHeader {
-        margin: 5rem 0 .5rem 0;
+        padding: 5rem 0 .5rem 0;
     }
 }
 
 @media screen and (max-width: 430px) {
     .cardHeader {
-        margin: 2rem 0 .5rem 0;
+        padding: 2rem 0 .5rem 0;
     }
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    line-height: 10vh;
+    text-align: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: #08101b;
+}
+
+.footer a {
+    color: #fff;
 }
