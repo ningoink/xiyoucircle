@@ -1,5 +1,6 @@
 import '../../image/earlyBirds.png'
 import '../../image/qqGroupQR.jpg'
+import '../../image/temp.png'
 import '../../style/index.css'
 import '../../style/indexCard1.css'
 import '../../style/indexCard2.css'
