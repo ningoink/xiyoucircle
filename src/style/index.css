@@ -25,6 +25,10 @@ body {
     overflow-x: hidden;
 }
 
+div {
+    display: block;
+}
+
 a {
     color: #34495e;
     text-decoration: none;
@@ -38,4 +42,40 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cardHeader {
+    color: #000;
+    line-height: 1.33rem;
+    font-size: 1.6rem;
+}
+
+.cardHorizontalLine {
+    height: 2rem;
+}
+
+.cardHorizontalLine span {
+    color: #70e1f5;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.cardSubheader {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #7A7A7A;
+}
+
+@media screen and (min-width: 430px) {
+    .cardHeader {
+        margin: 5rem 0 .5rem 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .cardHeader {
+        margin: 2rem 0 .5rem 0;
+    }
 }

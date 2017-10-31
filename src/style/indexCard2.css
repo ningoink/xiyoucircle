@@ -1,5 +1,121 @@
-/* 第二页 */
-
 #card2 {
-  background: #BEBEBE;
+    background: #F6F6F6;
+}
+
+.card2Wrap {
+    height: 80vh;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 0 1rem 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.littleCardWarp {
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.littleCardItemWrap {
+    flex: 1;
+}
+
+.littleCardItem {
+    width: 18rem;
+    height: 22rem;
+    background: white;
+    display: inline-block;
+}
+
+.litterCardItemImgWrap {
+    width: 18rem;
+    height: 9rem;
+}
+
+.litterCardItemImgWrap img {
+    width: 18rem;
+    height: 9rem;
+}
+
+@media screen and (min-width: 430px) {
+    .littleCardItem {
+        box-shadow: 3px 3px 30px 5px;
+    }
+    
+    .littleCardBigWrap .litterCardItemImgWrap {
+        width: 18rem;
+        height: 9rem;
+    }
+    
+    .littleCardBigWrap .litterCardItemImgWrap img {
+        width: 18rem;
+        height: 9rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .littleCardBigWrap {
+        box-shadow: 3px 3px 30px 5px;
+        z-index: 1;
+        width: 20rem;
+        height: 24rem;
+    }
+
+    .littleCardBigWrap .litterCardItemImgWrap {
+        width: 20rem;
+        height: 9rem;
+    }
+    
+    .littleCardBigWrap .litterCardItemImgWrap img {
+        width: 20rem;
+        height: 9rem;
+    }
+
+    .littleCardItem p {
+        overflow-y: hidden;
+    }
+}
+
+.littleCardItem h2 {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.littleCardItem p {
+    margin: 1rem 0 1rem 0;
+    padding: 0 1rem 1rem 1rem;
+    font-size: .9rem;
+    line-height: 1rem;
+    height: 5rem;
+    overflow-x: hidden;
+}
+
+.littleCardItem span {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 2.25rem;
+    font-size: .8rem;
+    color: #9da0a7;
+    border: 1px solid #9da0a7;
+    padding: 6px 12px;
+}
+
+.littleCardLoadMore {
+    margin-top: .5rem;
+}
+
+.littleCardLoadMore button {
+    color: white;
+    border: none;
+    background-color: #9da0a7;
+    box-shadow: 2px 2px 18px 1px #9da0a7;
+    padding: 0;
+    font-size: .8rem;
+    height: 2.5em;
+    width: 10rem;
 }
