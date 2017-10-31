@@ -1,9 +1,12 @@
-import '../../image/earlyBirds.jpg'
+import '../../image/earlyBirds.png'
 import '../../image/qqGroupQR.jpg'
 import '../../style/index.css'
-import '../../style/indexPage1.css'
+import '../../style/indexCard1.css'
+import '../../style/indexCard2.css'
+import '../../style/indexCard3.css'
 
 import joinUs from '../commonjs/joinUs.js'
+
 var openJoinQR = joinUs.openJoinQR
 var closeJoinQR = joinUs.closeJoinQR
 
