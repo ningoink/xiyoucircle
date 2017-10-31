@@ -18,8 +18,10 @@
 
 # 核心贡献者
 
-* [adong11](https://github.com/adong11)
-* [Joe19970619](https://github.com/Joe19970619)
+* [韩亦乐@icorvoh](https://github.com/icorvoh)
+* [王智@Joe19970619](https://github.com/Joe19970619)
+* [任林东@adong11](https://github.com/adong11)
+* [王玥珂@Demoiselle7](https://github.com/Demoiselle7)
 
 # 加入我们
 
