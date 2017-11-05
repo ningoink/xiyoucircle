@@ -99,7 +99,7 @@
 
 #qqGroupQR {
   position: fixed;
-  top: 6rem;
+  top: 1.5rem;
   right: 0;
   left: 0;
   bottom: 0;
@@ -110,41 +110,30 @@
 
 #dialog img {
   display: block;
-  padding: 0 10px;
-  margin: 0 auto 30px;
+  margin: 30px auto;
 }
 
-@media screen and (min-width: 750px) {
-  #dialog img {
-    width: 28.8rem; /* 36rem * 0.8 */
-    height: 40rem; /* 50rem * 0.8 */
-  }
-}
-
-@media screen and (max-width: 750px) {
-  #dialog img {
-    width: 23.4rem; /* 36rem * 0.65 */
-    height: 32.5rem; /* 50rem * 0.65 */
-  }
+#dialog img {
+  width: 100%; /* 36rem */
+  height: 32.5rem; /* 50rem */
 }
 
 #closeJoinQR {
   display: inline-block;
-  border: 2px solid #42b983;
+  border: 2px solid orange;
   border-radius: 2rem;
-  border-color: #42b983;
+  border-color: orange;
   box-sizing: border-box;
   letter-spacing: .1rem;
   transition: all .15s ease;
   text-decoration: none;
   color: #fff;
-  background-color: #42b983;
+  background-color: orange;
   height: 3rem;
-  width: 7rem;
+  width: 20rem;
   text-align: center;
-  font-size: 1rem;
-  margin-right: 1rem;
-  padding: .5em 2rem;
+  font-size: 1.2rem;
+  padding-top: .6rem;
 }
 
 .filter {
