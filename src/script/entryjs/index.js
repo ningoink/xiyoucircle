@@ -13,9 +13,14 @@ import joinUs from '../commonjs/joinUs.js'
 
 var openJoinQR = joinUs.openJoinQR
 var closeJoinQR = joinUs.closeJoinQR
+var ranBackground = joinUs.ranBackground
 
 let openJoinQRButton = document.getElementById('openJoinQR')
 openJoinQRButton.onclick = openJoinQR
 
 let closeJoinQRButton = document.getElementById('closeJoinQR')
 closeJoinQRButton.onclick = closeJoinQR
+
+window.onload=function(){
+    ranBackground()
+}
