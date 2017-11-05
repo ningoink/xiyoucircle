@@ -3,15 +3,15 @@
     padding: 0;
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 750px) {
     html {
         font-size: 15px;
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 750px) {
     html {
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 
@@ -35,23 +35,23 @@ a {
 }
 
 .card {
-    height: 80vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    justify-content: center;
+    min-height: 500px;
+    max-height: 800px;
     overflow: hidden;
 }
 
-.card#card3 {
-    height: auto;
+.card.short {
+    min-height: 300px;
+    max-height: 300px;
 }
 
 .cardHeaderWrap {
-    height: 20vh;
+    height: 20%;
+    min-height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .cardHeader {
@@ -76,18 +76,6 @@ a {
     color: #7A7A7A;
 }
 
-@media screen and (min-width: 430px) {
-    .cardHeader {
-        padding: 5rem 0 .5rem 0;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .cardHeader {
-        padding: 2rem 0 .5rem 0;
-    }
-}
-
 .footer {
     position: relative;
     bottom: 0;
@@ -95,7 +83,7 @@ a {
     text-align: center;
     height: 10vh;
     width: 100vw;
-    background-color: #08101b;
+    background-color: #242424;
 }
 
 .footer a {
