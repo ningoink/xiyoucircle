@@ -3,20 +3,16 @@
 }
 
 .card3Wrap {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  height: 300px;
   margin: 0 1rem 0;
   text-align: center;
 }
 
 .laboratoryMainBody {
-  width: 100vw;
-  text-align: center;
+  height: 70%;
 }
 
 .laboratoryWrap {
-  width: 96%;
   display: inline-block;
   overflow-x: hidden;
   overflow-y: auto;
@@ -45,11 +41,5 @@
 }
 
 .laboratoryApplyFor a {
-  /* 实验室没有填充满的时候的样式 */
   color: #36a2ff;
-}
-
-.laboratoryApplyFor.full {
-  display: none;
-  padding-top: .4rem;
 }

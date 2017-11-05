@@ -4,6 +4,7 @@
 
 .card2Wrap {
     height: 80vh;
+    min-height: 500px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -12,11 +13,11 @@
 }
 
 .littleCardWarp {
-    height: 40vh;
+    height: 60%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
 }
 
 .littleCardItemWrap {
@@ -25,9 +26,10 @@
 
 .littleCardItem {
     width: 18rem;
-    height: 40vh;
+    min-height: 320px;
     background: white;
     display: inline-block;
+    box-shadow: 3px 3px 30px 5px #242424;
 }
 
 .litterCardItemImgWrap {
@@ -40,45 +42,6 @@
     height: 9rem;
 }
 
-@media screen and (min-width: 430px) {
-    .littleCardItem {
-        box-shadow: 3px 3px 30px 5px;
-    }
-    
-    .littleCardBigWrap .litterCardItemImgWrap {
-        width: 18rem;
-        height: 9rem;
-    }
-    
-    .littleCardBigWrap .litterCardItemImgWrap img {
-        width: 18rem;
-        height: 9rem;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .littleCardBigWrap {
-        z-index: 9999;
-        box-shadow: 0 0 30px 0;
-        width: 20rem;
-        height: 24rem;
-    }
-
-    .littleCardBigWrap .litterCardItemImgWrap {
-        width: 20rem;
-        height: 9rem;
-    }
-    
-    .littleCardBigWrap .litterCardItemImgWrap img {
-        width: 20rem;
-        height: 9rem;
-    }
-
-    .littleCardItem p {
-        overflow-y: hidden;
-    }
-}
-
 .littleCardItem h2 {
     margin: 1rem 0 1rem 0;
     font-size: 1.2rem;
@@ -86,7 +49,7 @@
 }
 
 .littleCardItem p {
-    margin: 1rem 0 1rem 0;
+    margin-top: 1rem;
     padding: 0 1rem 1rem 1rem;
     font-size: .9rem;
     line-height: 1rem;
@@ -105,12 +68,13 @@
 }
 
 .littleCardLoadMore {
-    height: 20vh;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .littleCardLoadMore button {
-    position: relative;
-    top: 10vh;
     color: white;
     border: none;
     background-color: #9da0a7;
