@@ -148,3 +148,88 @@
   animation: row_ani 2s;
   background-color: rgba(24, 24, 24, 0.42);
 }
+
+/*card1 动画*/
+@keyframes box1 {
+    0% {
+        transform:translate(0, 23px) rotate(45deg);
+    }
+    100% {
+       transform: rotate(135deg);
+    }
+}
+@keyframes box2 {
+    0% {
+        transform:translate(0, -23px) rotate(45deg);
+    }
+    100% {
+       transform: rotate(135deg);
+    }
+}
+@keyframes box3 {
+    0% {
+        transform:translate(23px, 0px) rotate(135deg);
+    }
+    100% {
+       transform: rotate(45deg);
+    }
+}
+@keyframes box4 {
+    0% {
+        transform:translate(-23px, 0px) rotate(135deg);
+    }
+    100% {
+       transform: rotate(45deg);
+    }
+}
+.card1-animation {
+    /*position: absolute;
+    top: 190px;
+    left: 50vh;*/
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    transform: translateX(-200px);
+    /*margin: 0 auto;*/
+    opacity: 0.5;
+}
+.card1-animation .animate1 {
+    position: absolute;
+    animation: box1 infinite 1s;
+    animation-direction: alternate;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(#FFD9E8, #BCB9F8);
+    margin: 110px 200px;
+    border-radius: 5%;
+}
+.card1-animation .animate2 {
+    position: absolute;
+    animation: box2 infinite 1s;
+    animation-direction: alternate;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(#FFD9E8, #BCB9F8);
+    margin: 190px 200px;
+    border-radius: 5%;
+}
+.card1-animation .animate3 {
+    position: absolute;
+    animation: box3 infinite 1s;
+    animation-direction: alternate;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(#FFD9E8, #BCB9F8);
+    margin: 150px 160px;
+    border-radius: 5%;
+}
+.animate4 {
+    position: absolute;
+    animation: box4 infinite 1s;
+    animation-direction: alternate;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(#FFD9E8, #BCB9F8);
+    margin: 150px 240px;
+    border-radius: 5%;
+}
