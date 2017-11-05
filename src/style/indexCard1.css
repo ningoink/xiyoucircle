@@ -1,4 +1,5 @@
 #card1 {
+  height: 80vh;
   background: linear-gradient(to left bottom, hsl(139, 100%, 85%) 0%,hsl(251, 100%, 85%) 100%);
   display: flex;
   align-items: center;
