@@ -10,10 +10,11 @@ import '../../style/indexCard2.css'
 import '../../style/indexCard3.css'
 
 import joinUs from '../commonjs/joinUs.js'
+import background from '../commonjs/ranBackground.js'
 
 var openJoinQR = joinUs.openJoinQR
 var closeJoinQR = joinUs.closeJoinQR
-var ranBackground = joinUs.ranBackground
+var ranBackground = background.ranBackground
 
 let openJoinQRButton = document.getElementById('openJoinQR')
 openJoinQRButton.onclick = openJoinQR
