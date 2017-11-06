@@ -189,9 +189,10 @@
     display: flex;
     justify-content:center;
     align-items: flex-end;
-    transform: translateX(-200px);
+    transform: translateX(-125px) translateY(100px);
     /*margin: 0 auto;*/
     opacity: 0.5;
+    z-index: 1000;
 }
 .card1-animation .animate1 {
     position: absolute;
