@@ -1,0 +1,99 @@
+body {
+    font-size: 12px;
+    font-family: "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", 微软雅黑, Tahoma, Arial, sans-serif;
+}
+
+a {
+    color: #14191e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #20A0FF;
+}
+.box{
+    overflow: hidden;
+}
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    height: 60px;
+    /*background-color: #FAFAFA;*/
+    color: #292E35;
+}
+
+.header__logo {
+    float: left;
+    height: 40px;
+    margin: 10px 0px 0px 10px;
+    padding: 0px 0px 0px 50px;
+    background: url("./../img/logo.png") left center no-repeat;
+    display: block;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.header__nav {
+    float: right;
+    margin: 10px 10px 0px 0px;
+    position: relative;
+}
+
+.header__nav-item:hover {
+    color: #20A0FF;
+}
+
+.header__nav-item {
+    float: left;
+    padding: 0 20px;
+    font-size: 14px;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.header__nav-item-tip {
+    width: 80px;
+    height: 2px;
+    background: #20A0FF;
+    position: absolute;
+    left: 20px;
+    bottom: -2px;
+}
+
+.header__nav-item_custom_button {
+    color: #f6f6f6;
+    background: #20A0FF;
+    border: 1px solid #20A0FF;
+    width: 60px;
+    margin: 0 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 16px 1px #20A0FF;
+}
+
+.header__nav-item_custom_button:hover {
+    color: #ffffff;
+}
+/* 演示 */
+.screen-1{
+    color: rgb(7,17,27);
+    height: 800px;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.screen-2{
+    color: rgb(7,17,27);
+    height: 800px;
+    background-color: white;
+    text-align: center;
+}
+.screen-3{
+    color: rgb(7,17,27);
+    height: 800px;
+    background-color: #f6f6f6;
+    text-align: center;
+}
