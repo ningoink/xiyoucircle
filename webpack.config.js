@@ -1,23 +1,23 @@
-const webpack = require('webpack')
-const path = require('path')
-const fs = require('fs')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const webpack = require('webpack');
+const path = require('path');
+const fs = require('fs');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 // extract-text-webpack-plugin 会将所有的入口 css 移动到分开的 css 文件，不再内联到 js 中
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const ROOT_PATH = path.resolve(__dirname)
-const BUILD_PATH = path.resolve(ROOT_PATH, 'build') // 发布文件所存放的目录
+const ROOT_PATH = path.resolve(__dirname);
+const BUILD_PATH = path.resolve(ROOT_PATH, 'build') ;// 发布文件所存放的目录
 
-let entries = {} // 入口文件集合
-let HTMLPlugins = [] // HTML 插件集合
+let entries = {};// 入口文件集合
+let HTMLPlugins = []; // HTML 插件集合
 
 // 获取所有 html 入口页面
 const htmls = fs.readdirSync(ROOT_PATH + '/src/html').filter((f) => {
   return f.endsWith('.html')
 }).map((f) => {
   return f.slice(0, -5)
-})
+});
 
 // 遍历每一个 HTML 文件
 htmls.forEach((pageName) => {
@@ -34,10 +34,10 @@ htmls.forEach((pageName) => {
       collapseWhitespace: false // 删除空白符与换行符
     },
     chunks: [pageName, 'common']
-  })
+  });
   HTMLPlugins.push(htmlPlugin)
   entries[pageName] = path.resolve(__dirname, `src/script/entryjs/${pageName}.js`)
-})
+});
 
 module.exports = {
   // 页面入口文件配置
@@ -97,4 +97,4 @@ module.exports = {
       }
     ]
   }
-}
+};
