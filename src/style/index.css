@@ -1,29 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 15px;
+    }
+}
+
 body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: #34495e;
     font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
-    font-size: 15px;
     letter-spacing: 0;
     margin: 0;
     overflow-x: hidden;
 }
 
+div {
+    display: block;
+}
+
 a {
-    color: #333;
+    color: #34495e;
     text-decoration: none;
 }
 
-section.cover.show {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+.card {
+    min-height: 500px;
+    max-height: 800px;
+    overflow: hidden;
 }
-  
-section.cover {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+
+.card.short {
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.cardHeaderWrap {
+    height: 20%;
+    min-height: 128px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
-    display: none;
+    flex-direction: column;
+}
+
+.cardHeader {
+    color: #000;
+    line-height: 1.33rem;
+    font-size: 1.6rem;
+}
+
+.cardHorizontalLine {
+    height: 2rem;
+}
+
+.cardHorizontalLine span {
+    color: #70e1f5;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.cardSubheader {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #7A7A7A;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    line-height: 10vh;
+    text-align: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: #242424;
+}
+
+.footer a {
+    color: #fff;
 }
