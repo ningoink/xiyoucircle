@@ -1,0 +1,57 @@
+#card3 {
+  background: #fff;
+}
+
+.card3Wrap {
+  height: 300px;
+  margin: 0 1rem 0;
+  text-align: center;
+}
+
+.laboratoryMainBody {
+  height: 70%;
+}
+
+.laboratoryWrap {
+  display: inline-block;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.laboratoryWrap::-webkit-scrollbar {
+  display: none;
+}
+
+.laboratoryItem {
+  margin-top: 1rem;
+  display: inline-block;
+  height: 4.5rem;
+  width: 12rem;
+}
+
+.laboratoryItem img {
+  height: 4.5rem;
+  max-width: 10rem;
+}
+
+.laboratory2{
+    display: inline-block;
+    height: 4.5rem;
+    width: 12rem;
+    overflow: hidden;
+}
+
+.laboratory2 img {
+  height: 4.5rem;
+  max-width: 10rem;
+}
+
+.laboratoryApplyFor {
+  /* 实验室没有填充满的时候的样式 */
+  margin: 2rem;
+  padding-top: .4rem;
+}
+
+.laboratoryApplyFor a {
+  color: #36a2ff;
+}

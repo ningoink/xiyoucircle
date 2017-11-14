@@ -1,0 +1,86 @@
+#card2 {
+    background: #F6F6F6;
+}
+
+.card2Wrap {
+    height: 80vh;
+    min-height: 500px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 0 1rem 0;
+    text-align: center;
+}
+
+.littleCardWarp {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.littleCardItemWrap {
+    flex: 1;
+}
+
+.littleCardItem {
+    width: 18rem;
+    min-height: 320px;
+    background: white;
+    display: inline-block;
+    box-shadow: 3px 3px 30px 5px #242424;
+}
+
+.litterCardItemImgWrap {
+    width: 18rem;
+    height: 9rem;
+}
+
+.litterCardItemImgWrap img {
+    width: 18rem;
+    height: 9rem;
+}
+
+.littleCardItem h2 {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.littleCardItem p {
+    margin-top: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    font-size: .9rem;
+    line-height: 1rem;
+    height: 5rem;
+    overflow-x: hidden;
+}
+
+.littleCardItem span {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 2.25rem;
+    font-size: .8rem;
+    color: #9da0a7;
+    border: 1px solid #9da0a7;
+    padding: 6px 12px;
+}
+
+.littleCardLoadMore {
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.littleCardLoadMore button {
+    color: white;
+    border: none;
+    background-color: #9da0a7;
+    box-shadow: 2px 2px 18px 1px #9da0a7;
+    padding: 0;
+    font-size: .8rem;
+    height: 2.5em;
+    width: 10rem;
+}
