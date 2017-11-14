@@ -1,0 +1,236 @@
+#card1 {
+  height: 80vh;
+  background: linear-gradient(to left bottom, hsl(139, 100%, 85%) 0%,hsl(251, 100%, 85%) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card1 .card1Wrap {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: -20px 16px 0;
+  text-align: center;
+  z-index: 1;
+}
+
+#card1 .logo {
+  height: 10rem;
+  width: 10rem;
+}
+
+#card1 h1 {
+  color: inherit;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: .625rem 0 2.5rem;
+  position: relative;
+  text-align: center;
+}
+
+#card1 h1 a {
+  display: block;
+}
+
+#card1 a, #card1 a:hover {
+  text-decoration: none;
+}
+
+#card1 .anchor span {
+  color: #34495e;
+}
+
+#card1 h1 small {
+  bottom: -7px;
+  bottom: -.4375rem;
+  font-size: 1rem;
+  position: absolute;
+}
+
+#card1 blockquote {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#card1 p {
+  line-height: 1.5rem;
+  margin: 1em 0;
+}
+
+#card1 ul {
+  line-height: 1.8;
+  list-style-type: none;
+  margin: 2em auto;
+  max-width: 500px;
+  padding: 0;
+}
+
+#card1 .card1Wrap>p:last-child a:last-child {
+  background-color: #42b983;
+  color: #fff;
+  margin-right: 0;
+}
+
+#card1 .card1Wrap>p:last-child a {
+  border-color: #42b983;
+  border: 2px solid #42b983;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  color: #42b983;
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  margin-right: 1rem;
+  padding: .75em 2rem;
+  text-decoration: none;
+  transition: all .15s ease;
+}
+
+#dialog {
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1111;
+}
+
+#qqGroupQR {
+  position: fixed;
+  top: 1.5rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0px auto;
+  height: 20rem;
+  text-align: center;
+}
+
+#dialog img {
+  display: block;
+  margin: 30px auto;
+}
+
+#dialog img {
+  width: 100%; /* 36rem */
+  height: 32.5rem; /* 50rem */
+}
+
+#closeJoinQR {
+  display: inline-block;
+  border: 2px solid orange;
+  border-radius: 2rem;
+  border-color: orange;
+  box-sizing: border-box;
+  letter-spacing: .1rem;
+  transition: all .15s ease;
+  text-decoration: none;
+  color: #fff;
+  background-color: orange;
+  height: 3rem;
+  width: 20rem;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: .6rem;
+}
+
+.filter {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  -webkit-animation: row_ani 2s;
+  -moz-animation: row_ani 2s;
+  -ms-animation: row_ani 2s;
+  animation: row_ani 2s;
+  background-color: rgba(24, 24, 24, 0.42);
+}
+
+/*card1 动画*/
+@keyframes box1 {
+    0% {
+        transform:translate(0, 23px) rotate(45deg);
+    }
+    100% {
+       transform: rotate(135deg);
+    }
+}
+@keyframes box2 {
+    0% {
+        transform:translate(0, -23px) rotate(45deg);
+    }
+    100% {
+       transform: rotate(135deg);
+    }
+}
+@keyframes box3 {
+    0% {
+        transform:translate(23px, 0px) rotate(135deg);
+    }
+    100% {
+       transform: rotate(45deg);
+    }
+}
+@keyframes box4 {
+    0% {
+        transform:translate(-23px, 0px) rotate(135deg);
+    }
+    100% {
+       transform: rotate(45deg);
+    }
+}
+.card1-animation {
+    /*position: absolute;
+    top: 190px;
+    left: 50vh;*/
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    transform: translateX(-125px) translateY(100px);
+    /*margin: 0 auto;*/
+    opacity: 0.5;
+    z-index: 1000;
+}
+.card1-animation .animate1 {
+    position: absolute;
+    animation: box1 infinite 1s;
+    animation-direction: alternate;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(#FFD9E8, #BCB9F8);
+    margin: 110px 200px;
+    border-radius: 5%;
+}
+.card1-animation .animate2 {
+    position: absolute;
+    animation: box2 infinite 1s;
+    animation-direction: alternate;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(#FFD9E8, #BCB9F8);
+    margin: 190px 200px;
+    border-radius: 5%;
+}
+.card1-animation .animate3 {
+    position: absolute;
+    animation: box3 infinite 1s;
+    animation-direction: alternate;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(#FFD9E8, #BCB9F8);
+    margin: 150px 160px;
+    border-radius: 5%;
+}
+.animate4 {
+    position: absolute;
+    animation: box4 infinite 1s;
+    animation-direction: alternate;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(#FFD9E8, #BCB9F8);
+    margin: 150px 240px;
+    border-radius: 5%;
+}
