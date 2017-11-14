@@ -5,6 +5,6 @@ module.exports = merge(commonConfig, {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './build',
-    openPage: 'html/index.html'
+    openPage: 'html/laboratory.html'
   }
 })

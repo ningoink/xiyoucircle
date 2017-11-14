@@ -26,12 +26,17 @@
     color: #20A0FF;
 }
 .header_active_1 .header__nav-item-tip{
-    left: 20px;
-}
+     left: 20px;
+ }
 .header_active_2 .header__nav-item-tip{
     left: 140px;
 }
 .header_active_3 .header__nav-item-tip{
     left: 260px;
 }
-
+.header_active_4 .header__nav-item-tip{
+    left: 380px;
+}
+.header_active_5 .header__nav-item-tip{
+    left: 500px;
+}
