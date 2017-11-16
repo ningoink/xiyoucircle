@@ -4,6 +4,7 @@ import '../../image/temp.png'
 import '../../image/laboratory/creatshare.png'
 import '../../image/laboratory/epi-logo.jpg'
 import '../../image/laboratory/22.jpg'
+import '../../image/content_logo.jpg'
 
 
 import '../../style/index.css'
@@ -15,7 +16,7 @@ import '../../style/main.css'
 
 import joinUs from '../commonjs/joinUs.js'
 import background from '../commonjs/ranBackground.js'
-import nav from '../commonjs/nav'
+import nav from '../commonjs/nav.js'
 
 var openJoinQR = joinUs.openJoinQR;
 var closeJoinQR = joinUs.closeJoinQR;

@@ -35,7 +35,7 @@ htmls.forEach((pageName) => {
     },
     chunks: [pageName, 'common']
   });
-  HTMLPlugins.push(htmlPlugin)
+  HTMLPlugins.push(htmlPlugin);
   entries[pageName] = path.resolve(__dirname, `src/script/entryjs/${pageName}.js`)
 });
 
