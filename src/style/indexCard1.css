@@ -1,9 +1,12 @@
 #card1 {
   height: 80vh;
-  background: linear-gradient(to left bottom, hsl(139, 100%, 85%) 0%,hsl(251, 100%, 85%) 100%);
+  background-image: url('../image/index/indexBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 
 #card1 .card1Wrap {
@@ -21,7 +24,7 @@
 }
 
 #card1 h1 {
-  color: inherit;
+  color: #fff;
   font-size: 2.5rem;
   font-weight: 300;
   margin: .625rem 0 2.5rem;
@@ -38,7 +41,7 @@
 }
 
 #card1 .anchor span {
-  color: #34495e;
+  color: #fff;
 }
 
 #card1 h1 small {
@@ -78,6 +81,7 @@
   border-radius: 2rem;
   box-sizing: border-box;
   color: #42b983;
+  background-color: #fff;
   display: inline-block;
   font-size: 1rem;
   letter-spacing: .1rem;
