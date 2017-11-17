@@ -8,38 +8,38 @@
   text-align: center;
 }
 
-.laboratoryMainBody {
+.labMainBody {
   height: 70%;
 }
 
-.laboratoryWrap {
+.labWrap {
   display: inline-block;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-.laboratoryWrap::-webkit-scrollbar {
+.labWrap::-webkit-scrollbar {
   display: none;
 }
 
-.laboratoryItem {
+.labItem {
   margin-top: 1rem;
   display: inline-block;
   height: 4.5rem;
   width: 12rem;
 }
 
-.laboratoryItem img {
+.labItem img {
   height: 4.5rem;
   max-width: 10rem;
 }
 
-.laboratoryApplyFor {
+.labApplyFor {
   /* 实验室没有填充满的时候的样式 */
   margin: 2rem;
   padding-top: .4rem;
 }
 
-.laboratoryApplyFor a {
+.labApplyFor a {
   color: #36a2ff;
 }

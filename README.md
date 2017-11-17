@@ -6,16 +6,27 @@
 
 ![](./material/earlyBirds.jpg)
 
-西邮前端圈”前期功能将会有
+西邮前端圈”前期功能将会有：
 
 - [X] [“主页”](https://github.com/icorvoh/XUPT-FE/issues/1)：首页展示
 - [ ] [“西邮实验室”](https://github.com/icorvoh/XUPT-FE/issues/2)：展示加盟的西邮实验室，任何人可以代表其实验室申请加盟
 - [ ] [“前端咨询站”](https://github.com/icorvoh/XUPT-FE/issues/3)：国内各大前端团队技术周刊汇总、推荐必读技术博文汇总
 - [ ] [”前端路线图“](https://github.com/icorvoh/XUPT-FE/issues/4)：前期从网络上收集多个路线图并展示，后期用可视化技术绘出原创前端路线图
-- [ ] [“前端早鸟报”](https://github.com/icorvoh/XUPT-FE/issues/5)：纯原创，从零推荐书籍、博文、博主和有趣的网址
 - [ ] [“西邮大牛展”](https://github.com/icorvoh/XUPT-FE/issues/6)：为每一个加盟的学长学姐放入展示块，任何人可以申请加盟
 - [ ] [“关于前端圈”](https://github.com/icorvoh/XUPT-FE/issues/7)：西邮前端圈的宗旨，西邮前端圈的发展时间线、加入西邮前端圈
 - [ ] [“即刻编程”](https://github.com/icorvoh/XUPT-FE/issues/13)：提供的基于 JS Bin 的在线编程服务，每个人均可以直接开始入手前端开发。
+
+其中，各页面模块具体信息为：
+
+|页面模块|页面命名|所属域名|
+|----|----|----|
+|西邮前端圈|index.html| http://www.xupt-fe.top |
+|西邮实验室|lab.html| http://lab.xupt-fe.top |
+|前端咨询站|info.html| http://info.xupt-fe.top |
+|前端路线图|roadmap.html| http://roadmap.xupt-fe.top |
+|西邮大牛展|leader.html| http://leader.xupt-fe.top|
+|关于前端圈|about.html| http://about.xupt-fe.top |
+|即刻编程|code.html| http://code.xupt-fe.top |
 
 # 技术栈
 
