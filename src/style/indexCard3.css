@@ -1,45 +1,43 @@
 #card3 {
-  background: #fff;
+    background: #fff;
+    max-height: 1600px;
 }
 
 .card3Wrap {
-  height: 300px;
-  margin: 0 1rem 0;
-  text-align: center;
-}
-
-.labMainBody {
-  height: 70%;
+    margin: 0 15px 0;
+    text-align: center;
 }
 
 .labWrap {
-  display: inline-block;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.labWrap::-webkit-scrollbar {
-  display: none;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .labItem {
-  margin-top: 1rem;
-  display: inline-block;
-  height: 4.5rem;
-  width: 12rem;
+    margin: 15px 10px 15px 10px;
+    flex: 1;
+    height: 60px;
+    min-width: 200px;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
 }
 
 .labItem img {
-  height: 4.5rem;
-  max-width: 10rem;
+    max-height: 60px;
+    margin: 0 auto;
+    max-width: 188px;
 }
 
 .labApplyFor {
-  /* 实验室没有填充满的时候的样式 */
-  margin: 2rem;
-  padding-top: .4rem;
+    margin: 2rem;
+    padding-top: .4rem;
 }
 
 .labApplyFor a {
-  color: #36a2ff;
+    color: #36a2ff;
 }

@@ -1,10 +1,9 @@
 #card2 {
     background: #F6F6F6;
+    max-height: 2400px;
 }
 
 .card2Wrap {
-    height: 80vh;
-    min-height: 500px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -12,16 +11,22 @@
     text-align: center;
 }
 
-.littleCardWarp {
+.littleCardPageWrap {
     height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.littleCardPageWrap.hide {
+    display: none;
 }
 
 .littleCardItemWrap {
     flex: 1;
+    margin-bottom: 30px;
 }
 
 .littleCardItem {
@@ -65,22 +70,44 @@
     color: #9da0a7;
     border: 1px solid #9da0a7;
     padding: 6px 12px;
+    cursor: pointer;
 }
 
-.littleCardLoadMore {
+.littleCardPagination {
     height: 18%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.littleCardLoadMore button {
-    color: white;
-    border: none;
-    background-color: #9da0a7;
-    box-shadow: 2px 2px 18px 1px #9da0a7;
-    padding: 0;
-    font-size: .8rem;
-    height: 2.5em;
-    width: 10rem;
+.littleCardPagination button {
+    margin: 0 5px;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+    border: 1px solid #bbbbbb;
+    background-color: #bbbbbb;
+    cursor: pointer;
+}
+
+.littleCardPagination .buttonActive {
+    border: 1px solid #00c264;
+    background-color: #00c264;
+}
+
+/* 小于 888px 时候，card2 的卡片变成一列的 */
+
+@media all and (max-width: 888px) {
+    .littleCardPageWrap {
+        display: block;
+    }
+
+    .littleCardPageWrap.hide {
+        display: block;
+    }
+
+    /* 隐藏分页切换卡按钮 */
+    .littleCardPagination {
+        display: none;
+    }
 }
