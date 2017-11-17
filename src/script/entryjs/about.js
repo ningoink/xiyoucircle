@@ -1,2 +1,2 @@
-import '../../image/github.png'
+import '../../image/icon/github.png'
 import '../../style/index.css'
