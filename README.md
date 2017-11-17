@@ -37,6 +37,12 @@
 * NodeJS
 * Nginx
 
+或许将适当引入了如下库：
+
+- [X] [express](http://expressjs.com/)
+- [ ] [fontawesome](http://fontawesome.io/)
+- [ ] [Vue.js](https://cn.vuejs.org/)
+
 这些技术点也在随着业务的扩展不断更新中，尽请期待。
 
 同时开发团队还做了如下工作，或许你也能贡献你的力量：
