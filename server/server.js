@@ -9,5 +9,5 @@ app.use(express.static(path.join(__dirname, '../build')))
 app.use('/', views)
 
 app.listen(3000, function () {
-    console.log('hello, eupt!')
+    console.log('hello, xupt!')
 })
