@@ -3,8 +3,6 @@ import '../../image/icon/earlyBirds.png'
 import '../../image/icon/hands.png'
 import '../../image/icon/more.png'
 
-import '../../image/content_logo.jpg'
-
 import '../../image/index/lab.png'
 import '../../image/index/info.png'
 import '../../image/index/roadmap.png'
