@@ -70,7 +70,10 @@
     color: #9da0a7;
     border: 1px solid #9da0a7;
     padding: 6px 12px;
-    cursor: pointer;
+}
+
+.littleCardItem span a {
+    color: #31a5b6;
 }
 
 .littleCardPagination {
