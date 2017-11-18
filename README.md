@@ -39,8 +39,9 @@
 
 或许将适当引入了如下库：
 
-- [X] [express](http://expressjs.com/)
+- [X] [normalize.css](http://necolas.github.io/normalize.css/)
 - [ ] [fontawesome](http://fontawesome.io/)
+- [X] [express](http://expressjs.com/)
 - [ ] [Vue.js](https://cn.vuejs.org/)
 
 这些技术点也在随着业务的扩展不断更新中，尽请期待。
