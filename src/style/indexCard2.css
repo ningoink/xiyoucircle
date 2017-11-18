@@ -88,6 +88,7 @@
     border: 1px solid #bbbbbb;
     background-color: #bbbbbb;
     cursor: pointer;
+    outline: none;
 }
 
 .littleCardPagination .buttonActive {
