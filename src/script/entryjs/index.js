@@ -11,6 +11,7 @@ import '../../image/index/qqGroupQR.jpg'
 
 import '../../image/lab/creatshare.png'
 import '../../image/lab/epi-logo.jpg'
+import '../../image/lab/22.jpg'
 
 import '../../style/_reset.css'
 import '../../style/index.css'
