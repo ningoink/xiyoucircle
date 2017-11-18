@@ -18,15 +18,19 @@
 
 其中，各页面模块具体信息为：
 
-|页面模块|页面命名|所属域名|
-|----|----|----|
-|西邮前端圈|index.html| http://www.xupt-fe.top |
-|西邮实验室|lab.html| http://lab.xupt-fe.top |
-|前端咨询站|info.html| http://info.xupt-fe.top |
-|前端路线图|roadmap.html| http://roadmap.xupt-fe.top |
-|西邮大牛展|leader.html| http://leader.xupt-fe.top|
-|关于前端圈|about.html| http://about.xupt-fe.top |
-|即刻编程|code.html| http://code.xupt-fe.top |
+|页面模块|在线网址|
+|----|----|
+|西邮前端圈|[http://xupt-fe.top/index.html](http://xupt-fe.top/index.html)|
+|西邮实验室|[http://xupt-fe.top/lab.html](http://xupt-fe.top/lab.html)|
+|前端咨询站|[http://xupt-fe.top/info.html](http://xupt-fe.top/info.html)|
+|前端路线图|[http://xupt-fe.top/roadmap.html](http://xupt-fe.top/roadmap.html)|
+|西邮大牛展|[http://xupt-fe.top/leader.html](http://xupt-fe.top/leader.html)|
+|关于前端圈|[http://xupt-fe.top/about.html](http://xupt-fe.top/about.html)|
+|即刻编程|[https://jsfiddle.net/](https://jsfiddle.net/)|
+
+接下来的任务清单中还包括：
+
+- [ ] 将每个功能页面绑定在二级域名下
 
 # 技术栈
 
@@ -49,7 +53,7 @@
 同时开发团队还做了如下工作，或许你也能贡献你的力量：
 
 * 产品原型图的设计
-* 群内的技术支持
+* 群内交流时的技术支持
 * 宣传与推广
 
 # 核心贡献者
@@ -67,9 +71,12 @@
 * 贡献你的代码：
   * 点击右上角 ```fork``` 将仓库克隆到你的账号下，并在合适的时候提交 PR
   * 或直接与我联系，将你加入本仓库的 collaboration 中，在 develop 分支中合作开发。
-* 促进团队高效协作：
-  * 推荐使用 [gitflow](http://danielkummer.github.io/git-flow-cheatsheet/) 来管理你的分支
-  * 推荐使用 [gitmoji](https://gitmoji.carloscuesta.me/) 来生动化你的 Git Commit
+* 为在团队协作分工时贯穿”高内聚，低耦合”思想，降低交流、维护成本，声明以下协作指南：
+  * 每个人把自己负责的代码写在 src 下的各个文件夹里，用 webpack 打包， npm start 能成功运行。且不随意创建新文件夹；不随意引入第三方库；引入第三方库时优先考虑使用 npm，其次优先考虑在 cdn.bootcss.com 寻找 CDN 源。
+  * 无论 css 还是 js 都得高内聚，低耦合，模块化开发，文件命名及变量全小写且采用小驼峰法命名，否则不接受合并请求喔。且 JavaScript 模块优先采用 import/export 语法解析赋值式开发，并通过 babel  预编译；JavaScript 代码优先采用 ES6 支持的语法糖进行代码重构。
+  * git 协作采用 [gitflow](http://danielkummer.github.io/git-flow-cheatsheet/)，在自己分支下而不是 master 也不是 develop 下开发，git commit 一律采用一行以内的小写英文，且在 commit 中推荐使用 [gitmoji](https://gitmoji.carloscuesta.me/) 或 [emoji.muan](http://emoji.muan.co/) 表情生动化 commit 记录。写完代码后 push 自己的分支到主仓库下，大家集体通过后，由 [@icorvoh](https://github.com/icorvoh) 负责合并到 develop 下。
+  * 这次只是纯页面，要求响应式布局，其中以 750px 的屏幕宽度为界限。验收条件是每个像素的宽度下页面都不被撕裂。导航条除即刻编程外统一使用一种，由 - [@Joe19970619](https://github.com/Joe19970619) 负责。
+  * 每个人在自己负责的页面模板中写死的数据，验收前需将该数据提取成 JSON 数据(之后考虑是否引入 Mock 服务)，并通过 JavaScript 读取和渲染，以使该项目符合 MVC 设计模式。
 
 更多资讯：
 
