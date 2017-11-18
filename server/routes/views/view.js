@@ -8,23 +8,27 @@ router.get('/', function (req, res, next) {
     res.sendFile(path.join(__dirname, '../../../build/html', 'index.html'))
 })
 
-router.get('/lab', function (req, res, next) {
+router.get('/index.html', function (req, res, next) {
+    res.sendFile(path.join(__dirname, '../../../build/html', 'index.html'))
+})
+
+router.get('/lab.html', function (req, res, next) {
     res.sendFile(path.join(__dirname, '../../../build/html', 'lab.html'))
 })
 
-router.get('/info', function (req, res, next) {
+router.get('/info.html', function (req, res, next) {
     res.sendFile(path.join(__dirname, '../../../build/html', 'info.html'))
 })
 
-router.get('/roadmap', function (req, res, next) {
+router.get('/roadmap.html', function (req, res, next) {
     res.sendFile(path.join(__dirname, '../../../build/html', 'roadmap.html'))
 })
 
-router.get('/leader', function (req, res, next) {
+router.get('/leader.html', function (req, res, next) {
     res.sendFile(path.join(__dirname, '../../../build/html', 'leader.html'))
 })
 
-router.get('/about', function (req, res, next) {
+router.get('/about.html', function (req, res, next) {
     res.sendFile(path.join(__dirname, '../../../build/html', 'about.html'))
 })
 
