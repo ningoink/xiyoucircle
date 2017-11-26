@@ -99,7 +99,7 @@ a:hover {
     margin: 0px auto;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .content__heading {
@@ -193,7 +193,7 @@ a:hover {
 .content__main-content_i_bottom_icon{
     display: inline-block;
     float: left;
-    padding: 0 16px 0 60px;
+    padding-left: 60px;
 }
 .content__main-content_i_bottom_icon i:nth-child(1){
     display: inline-block;
@@ -213,5 +213,30 @@ footer{
     text-align: center;
 }
 
+/*响应式*/
+@media all and (max-width: 1200px) {
+    footer{
+        transform: translateY(500px);
+    }
+    
+}
+@media all and (max-width: 1000px) {
 
+    .header__logo{
+        display: none;
+    }
+}
+@media all and (max-width: 630px) {
+    .content__subheading{
+        display: none;
+    }
+    .content__heading,.content__underline{
+        transform: translateX(-150px) translateY(20px);
+    }
+    .content__main-content_i_bottom div:nth-child(3){
+        display: none;
+        /*float: left;
+        padding: 0 10px;*/
+    }
 
+}
