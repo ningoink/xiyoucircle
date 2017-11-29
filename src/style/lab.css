@@ -1,19 +1,7 @@
-body {
-    font-size: 12px;
-    font-family: "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", 微软雅黑, Tahoma, Arial, sans-serif;
-}
-
-a {
-    color: #14191e;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #20A0FF;
-}
 .box{
     overflow: hidden;
 }
+
 .header {
     position: relative;
     top: 0px;
@@ -80,7 +68,7 @@ a:hover {
 }
 
 /* 内容区 */
-.content{
+.content {
     color: rgb(255,255,255);
     height: 800px;
     background-color: white;
@@ -89,13 +77,13 @@ a:hover {
     background-size:cover;
     position: relative;
 }
+
 /*.content__background-img{
     margin: 0 auto;
     width: 1500px;
 }*/
-.content__wrap{
-    max-width: 1200px;
-    min-width: 800px;
+
+.content__wrap {
     margin: 0px auto;
     height: 100%;
     position: relative;
@@ -108,65 +96,57 @@ a:hover {
     font-size: 24px;
     color: #07111b;
 }
+
 .content__underline{
     color: #20A0FF;
     font-size: 20px;
 }
+
 .content__subheading{
     font-size: 16px;
     line-height: 10px;
     color: #7a7a7a;
 }
+
 /* 主内容区 */
 .content__main-content{
-    max-width: 1200px;
-    min-width: 800px;
-    margin: 0px auto;
-    height: auto;
-    position: relative;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
-.content__main-content_row{
-    max-width: 1200px;
-    min-width: 800px;
-    margin: 20px 0;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
+
 .content__main-content_i{
-    width: 350px;
-    height: 150px;
-    margin: 10px 50px 10px 10px;
-    float: left;
+    flex: 1;
+    max-width: 350px;
+    max-height: 150px;
     color: #07111b;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 1px 1px 20px 1px #aaa;
 }
-.makePerfect{
-    margin: 10px 0 10px 10px;
-}
+
 .content__main-content_i_top{
     height: 120px;
     width: 350px;
 }
+
 .content__logo{
     width: 80px;
     padding: 30px 10px 10px 10px;
-
 }
+
 .content__main-content_i_top_content{
     float:right;
     width: 230px;
     height: 120px;
 }
+
 .content__main-content_i_top_content p:nth-child(1){
     font-size: 18px;
     text-align: left;
     margin-top: 30px;
-
 }
+
 .content__main-content_i_top_content p:nth-child(2){
     font-size: 12px;
     margin: 26px 0 0 0;
@@ -174,6 +154,7 @@ a:hover {
     text-align: left;
     line-height: 16px;
 }
+
 .content__main-content_i_bottom{
     font-size: 10px;
     width: 350px;
@@ -184,25 +165,30 @@ a:hover {
      display: inline-block;
      float: left;
      padding: 0 10px 0 16px;
- }
+}
+
 .content__main-content_i_bottom div:nth-child(2){
     display: inline-block;
     float: left;
     padding: 0 10px;
 }
+
 .content__main-content_i_bottom_icon{
     display: inline-block;
     float: left;
     padding-left: 60px;
 }
+
 .content__main-content_i_bottom_icon i:nth-child(1){
     display: inline-block;
     padding-right: 16px;
 }
+
 .content__main-content_i_bottom_icon i:nth-child(2){
     display: inline-block;
     padding-right: 16px;
 }
+
 /* 底部 */
 footer{
     width: 100%;
@@ -220,12 +206,14 @@ footer{
     }
     
 }
+
 @media all and (max-width: 1000px) {
 
     .header__logo{
         display: none;
     }
 }
+
 @media all and (max-width: 630px) {
     .content__subheading{
         display: none;

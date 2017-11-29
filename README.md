@@ -20,17 +20,13 @@
 
 |页面模块|在线网址|
 |----|----|
-|西邮前端圈|[http://xupt-fe.top/index.html](http://xupt-fe.top/index.html)|
-|西邮实验室|[http://xupt-fe.top/lab.html](http://xupt-fe.top/lab.html)|
-|前端咨询站|[http://xupt-fe.top/info.html](http://xupt-fe.top/info.html)|
-|前端路线图|[http://xupt-fe.top/roadmap.html](http://xupt-fe.top/roadmap.html)|
-|西邮大牛展|[http://xupt-fe.top/leader.html](http://xupt-fe.top/leader.html)|
-|关于前端圈|[http://xupt-fe.top/about.html](http://xupt-fe.top/about.html)|
-|即刻编程|[http://xupt-fe.top/coding.html](http://xupt-fe.top/coding.html)|
-
-接下来的任务清单中还包括：
-
-- [ ] 将每个功能页面绑定在二级域名下
+|西邮前端圈|[http://xupt-fe.top/](http://xupt-fe.top/index)|
+|西邮实验室|[http://xupt-fe.top/lab](http://xupt-fe.top/lab)|
+|前端咨询站|[http://xupt-fe.top/info](http://xupt-fe.top/info)|
+|前端路线图|[http://xupt-fe.top/roadmap](http://xupt-fe.top/roadmap)|
+|西邮大牛展|[http://xupt-fe.top/leader](http://xupt-fe.top/leader)|
+|关于前端圈|[http://xupt-fe.top/about](http://xupt-fe.top/about)|
+|即刻编程|[http://xupt-fe.top/coding](http://xupt-fe.top/coding)|
 
 # 技术栈
 
@@ -43,10 +39,9 @@
 
 或许将适当引入了如下库：
 
-- [X] [normalize.css](http://necolas.github.io/normalize.css/)
-- [ ] [fontawesome](http://fontawesome.io/)
+- [X] [fontawesome](http://fontawesome.io/)
 - [X] [express](http://expressjs.com/)
-- [ ] [Vue.js](https://cn.vuejs.org/)
+- [X] [Vue.js](https://cn.vuejs.org/)
 
 这些技术点也在随着业务的扩展不断更新中，尽请期待。
 
