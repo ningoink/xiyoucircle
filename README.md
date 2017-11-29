@@ -26,7 +26,7 @@
 |前端路线图|[http://xupt-fe.top/roadmap.html](http://xupt-fe.top/roadmap.html)|
 |西邮大牛展|[http://xupt-fe.top/leader.html](http://xupt-fe.top/leader.html)|
 |关于前端圈|[http://xupt-fe.top/about.html](http://xupt-fe.top/about.html)|
-|即刻编程|[https://jsfiddle.net/](https://jsfiddle.net/)|
+|即刻编程|[http://xupt-fe.top/coding.html](http://xupt-fe.top/coding.html)|
 
 接下来的任务清单中还包括：
 
