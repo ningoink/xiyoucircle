@@ -1,6 +1,7 @@
 .card {
     min-height: 500px;
     max-height: 800px;
+    min-width: 320px;
     overflow: hidden;
 }
 
