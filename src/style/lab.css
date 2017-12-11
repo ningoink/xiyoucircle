@@ -212,21 +212,21 @@ footer{
 }
 
 /*响应式*/
-@media all and (max-width: 1200px) {
-    /*footer{
+/*@media all and (max-width: 1200px) {
+    !*footer{
         transform: translateY(2rem);
-    }*/
+    }*!
     .content__main-content{
         width: 100vw;
     }
-    .header__logo{
+    !*.header__logo{
         display: none;
-    }
+    }*!
     .content__wrap{
         width: 100vw;
     }
-}
-@media all and (max-width: 630px) {
+}*/
+@media all and (max-width: 1200px) {
     .content{
         width: 100vw;
         height: 100vh;
@@ -237,6 +237,9 @@ footer{
         height: 60px;
         background-color: #20A0FF;
         color: #292E35;
+    }
+    .header__logo{
+        display: none;
     }
     .header__nav {
         float: right;
@@ -260,8 +263,9 @@ footer{
         height: 2px;
         background: #20A0FF;
         position: absolute;
-        left: 20px;
+        left: 3rem;
         bottom: -2px;
+
     }
 
     .header__nav-item_custom_button {
