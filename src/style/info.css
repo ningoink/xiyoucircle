@@ -1,0 +1,116 @@
+@media (min-width:380px) and (max-width:480px) {
+   .maincontent .type-o .type-c .type-m .type-b .item .desc .logo .logo img {
+        height: .52rem;
+    }
+}
+@media (min-width:481px) {
+	.maincontent  .type-o .type-c .type-m .type-b .item .desc .logo .logo img { 
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+@media (min-width:768px) {
+	.maincontent .type-o .type-c .type-m .type-b  .item .desc .logo .logo img {
+         width: 43%;
+        }
+}
+@media (min-width:1040px) {
+	.maincontent .type-o .type-c .type-m .type-b  .item .desc .logo .logo img {
+         width: 28%;
+        }
+}
+@media (min-width:1200px) {
+	.maincontent .type-o .type-c .type-m .type-b  .item .desc .logo .logo img { 
+        width: 20%;
+     }
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: block;
+}
+body {
+    font-size: 12px;
+    background-color:#F3F5F8;
+    min-height: 100vh;
+    font-family: PingFangSC-Regular, "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+}
+#maincontent {
+    font-size: 18px;
+}
+.type-o {
+    overflow: hidden;
+    background: #fff;
+    margin: 20px 30px;
+    padding-bottom: 20px;
+}
+.type-m {
+    overflow: hidden;
+    background: #fff;
+    margin: 20px 30px;
+    padding-bottom: 20px;
+}
+.type-c {
+    overflow: hidden;
+    background: #fff;
+    margin: 20px 30px;
+    padding-bottom: 20px;
+}
+.type-b {
+    overflow: hidden;
+    background: #fff;
+    margin: 20px 30px;
+    padding-bottom: 20px;
+}
+
+.icon-o,.icon-m,.icon-c,.icon-b {
+    width:5vw;
+    height:5vh;
+    border-radius: 1em;
+} 
+.item {
+    border-radius: 6px;
+    background: #fff;
+    padding: 10px;
+    width: 20%;
+    min-width: 200px;
+    margin: 22px 0 0 2.1%;
+    float: left;
+    overflow: hidden;
+    border: 1px solid #e4ecf3;
+    box-shadow: 1px 2px 3px #f2f6f8;
+}
+.logo {
+    height: 4.5vh;
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    color: #3273dc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 .1rem;
+}
+.logo img {
+    width: 5vw;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.desc {
+    color: gray;
+    font-size: 12px;
+    padding-top: 10px;
+    height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+a:hover {
+    margin-top:10px;
+}
