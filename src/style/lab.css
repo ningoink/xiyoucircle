@@ -1,10 +1,19 @@
-.box{
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+body {
+    font-size: 12px;
+    font-family: "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", 微软雅黑, Tahoma, Arial, sans-serif;
 }
 
+a {
+    color: #14191e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #20A0FF;
+}
+.box{
+    overflow: hidden;
+}
 .header {
     position: relative;
     top: 0px;
@@ -71,24 +80,22 @@
 }
 
 /* 内容区 */
-.content {
-    flex: 1;
+.content{
     color: rgb(255,255,255);
-    height: 100%;
-    width: 100%;
+    height: 800px;
     background-color: white;
     text-align: center;
     /*background: url() no-repeat center bottom;*/
     background-size:cover;
     position: relative;
 }
-
 /*.content__background-img{
     margin: 0 auto;
     width: 1500px;
 }*/
-
-.content__wrap {
+.content__wrap{
+    max-width: 1200px;
+    min-width: 800px;
     margin: 0px auto;
     height: 100%;
     position: relative;
@@ -101,64 +108,65 @@
     font-size: 24px;
     color: #07111b;
 }
-
 .content__underline{
     color: #20A0FF;
     font-size: 20px;
 }
-
 .content__subheading{
     font-size: 16px;
     line-height: 10px;
     color: #7a7a7a;
 }
-
 /* 主内容区 */
 .content__main-content{
-    margin: 0 auto;
-    width: 1200px;
-
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0px auto;
+    height: auto;
+    position: relative;
     overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 1.6rem 1rem 1rem 1rem;
-    /*border: 1px solid red;*/
 }
-
+.content__main-content_row{
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 20px 0;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
 .content__main-content_i{
-    flex: 1;
-    max-width: 350px;
-    max-height: 150px;
+    width: 350px;
+    height: 150px;
+    margin: 10px 50px 10px 10px;
+    float: left;
     color: #07111b;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 1px 1px 20px 1px #aaa;
-    margin: 1rem 1.4rem;
 }
-
+.makePerfect{
+    margin: 10px 0 10px 10px;
+}
 .content__main-content_i_top{
     height: 120px;
     width: 350px;
 }
-
 .content__logo{
     width: 80px;
     padding: 30px 10px 10px 10px;
-}
 
+}
 .content__main-content_i_top_content{
     float:right;
     width: 230px;
     height: 120px;
 }
-
 .content__main-content_i_top_content p:nth-child(1){
     font-size: 18px;
     text-align: left;
     margin-top: 30px;
-}
 
+}
 .content__main-content_i_top_content p:nth-child(2){
     font-size: 12px;
     margin: 26px 0 0 0;
@@ -166,7 +174,6 @@
     text-align: left;
     line-height: 16px;
 }
-
 .content__main-content_i_bottom{
     font-size: 10px;
     width: 350px;
@@ -177,30 +184,25 @@
      display: inline-block;
      float: left;
      padding: 0 10px 0 16px;
-}
-
+ }
 .content__main-content_i_bottom div:nth-child(2){
     display: inline-block;
     float: left;
     padding: 0 10px;
 }
-
 .content__main-content_i_bottom_icon{
     display: inline-block;
     float: left;
     padding-left: 60px;
 }
-
 .content__main-content_i_bottom_icon i:nth-child(1){
     display: inline-block;
     padding-right: 16px;
 }
-
 .content__main-content_i_bottom_icon i:nth-child(2){
     display: inline-block;
     padding-right: 16px;
 }
-
 /* 底部 */
 footer{
     width: 100%;
@@ -212,217 +214,29 @@ footer{
 }
 
 /*响应式*/
-/*@media all and (max-width: 1200px) {
-    !*footer{
-        transform: translateY(2rem);
-    }*!
-    .content__main-content{
-        width: 100vw;
-    }
-    !*.header__logo{
-        display: none;
-    }*!
-    .content__wrap{
-        width: 100vw;
-    }
-}*/
 @media all and (max-width: 1200px) {
-    .content{
-        width: 100vw;
-        height: 100vh;
-        overflow: auto;
+    footer{
+        transform: translateY(500px);
     }
-    /* 对于顶部导航栏 */
-    .header {
-        height: 60px;
-        background-color: #20A0FF;
-        color: #292E35;
-    }
+    
+}
+@media all and (max-width: 1000px) {
+
     .header__logo{
         display: none;
     }
-    .header__nav {
-        float: right;
-        margin: 10px 10px 0px 0px;
-        width: 100vw;
-        position: relative;
-    }
-    .header__nav-item {
-        float: left;
-        padding: 0 3rem;
-        font-size: 14px;
-        display: inline-block;
-        width: 80px;
-        text-align: center;
-        line-height: 40px;
-        /*border: 1px solid black;*/
-    }
-
-    .header__nav-item-tip {
-        width: 80px;
-        height: 2px;
-        background: #20A0FF;
-        position: absolute;
-        left: 3rem;
-        bottom: -2px;
-
-    }
-
-    .header__nav-item_custom_button {
-        color: #fff;
-
-        width: 60px;
-        margin: 0 20px;
-        padding: 0 1rem;
-        float: right;
-
-    }
-
-    .header__nav-item_custom_button:hover {
-        color: #ffffff;
-    }
-    /* 对于主副标题的兼容 */
-    .content__heading {
-        margin-top: 2.6rem;
-        line-height: 2rem;
-        font-size: 1.6rem;
-        color: #07111b;
-    }
-
-    .content__underline{
-        color: #20A0FF;
-        font-size: 1.6rem;
-    }
-
-    .content__subheading{
-        width: 18rem;
-        font-size: .9rem;
-        line-height: 1.2rem;
-        color: #7a7a7a;
-        margin: 0 auto;
-    }
-    /* 主内容区 */
-    .content__main-content{
-        margin: 0 auto;
-        width: 90vw;
-
-        overflow: auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /*padding: 1.6rem 1rem 1rem 1rem;*/
-        /*border: 1px solid red;*/
-    }
-    .content__main-content_i{
-        flex: 1;
-        max-width: 300px;
-        max-height: 150px;
-        color: #07111b;
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 1px 1px 20px 1px #aaa;
-        /*margin: 1rem 1rem;*/
-    }
-    .content__main-content_i_top{
-        height: 120px;
-        width: 300px;
-    }
-
-    .content__logo{
-        float: left;
-        width: 4.6rem;/* 4.6 */
-        padding: 30px 1rem 10px 1rem;
-    }
-
-    .content__main-content_i_top_content{
-        float:left;
-        width: 200px;
-        height: 120px;
-    }
-
-    .content__main-content_i_top_content p:nth-child(1){
-        font-size: 1.2rem;
-        text-align: left;
-        margin-top: 30px;
-    }
-
-    .content__main-content_i_top_content p:nth-child(2){
-        font-size: .6rem;
-        margin: 26px 0 0 0;
-        padding: 0 1.4rem 0 0;
-        text-align: left;
-        line-height: 16px;
-    }
-
-    .content__main-content_i_bottom{
-        font-size: 10px;
-        width: 300px;
-        height: 30px;
-        padding: 8px 0 0 0;
-    }
-    .content__main-content_i_bottom div:nth-child(1){
-        display: inline-block;
-        float: left;
-        padding: 0 10px 0 16px;
-    }
-
-    .content__main-content_i_bottom div:nth-child(2){
-        display: inline-block;
-        float: left;
-        padding: 0 10px;
-    }
-
-    .content__main-content_i_bottom_icon{
-        display: inline-block;
-        float: left;
-        padding-left: 3rem;
-    }
-
-    .content__main-content_i_bottom_icon i:nth-child(1){
-        display: inline-block;
-        padding-right: 16px;
-    }
-
-    .content__main-content_i_bottom_icon i:nth-child(2){
-        display: inline-block;
-        padding-right: 16px;
-    }
 }
-@media all and (max-width: 360px) {
-    .content__main-content_i_bottom{
-        font-size: 10px;
-        width: 280px;
-        height: 30px;
-        padding: 8px 0 0 0;
+@media all and (max-width: 630px) {
+    .content__subheading{
+        display: none;
     }
-    .content__main-content_i_bottom div:nth-child(1){
-        display: inline-block;
-        float: left;
-        padding: 0 10px 0 16px;
+    .content__heading,.content__underline{
+        transform: translateX(-150px) translateY(20px);
     }
-
-    .content__main-content_i_bottom div:nth-child(2){
-        display: inline-block;
-        float: left;
-        padding: 0 10px;
-    }
-
-    .content__main-content_i_bottom_icon{
-        display: inline-block;
-        float: left;
-        padding-left: 2rem;
-    }
-
-    .content__main-content_i_bottom_icon i:nth-child(1){
-        display: inline-block;
-        padding-right: 16px;
-    }
-
-    .content__main-content_i_bottom_icon i:nth-child(2){
-        display: inline-block;
-        padding-right: 16px;
+    .content__main-content_i_bottom div:nth-child(3){
+        display: none;
+        /*float: left;
+        padding: 0 10px;*/
     }
 
 }
