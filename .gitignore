@@ -23,3 +23,5 @@ yarn-error.log*
 # custom
 dist/node_modules
 prototype
+
+.idea/
