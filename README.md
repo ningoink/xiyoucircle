@@ -1,32 +1,33 @@
-# 西邮前端圈
+# 西邮技术圈
+
+![](./material/earlyBirds.jpg)
 
 本项目通过 [creatshare-app-init](https://github.com/creatshare-demos/creatshare-app-init) 脚手架初始化
 
 # 官网功能
 
-![](./material/earlyBirds.jpg)
+西邮技术圈”前期功能将会有：
 
-西邮前端圈”前期功能将会有：
-
-- [X] [“主页”](https://github.com/icorvoh/XUPT-FE/issues/1)：首页展示
-- [ ] [“西邮实验室”](https://github.com/icorvoh/XUPT-FE/issues/2)：展示加盟的西邮实验室，任何人可以代表其实验室申请加盟
-- [ ] [“前端咨询站”](https://github.com/icorvoh/XUPT-FE/issues/3)：国内各大前端团队技术周刊汇总、推荐必读技术博文汇总
-- [ ] [”前端路线图“](https://github.com/icorvoh/XUPT-FE/issues/4)：前期从网络上收集多个路线图并展示，后期用可视化技术绘出原创前端路线图
-- [ ] [“西邮大牛展”](https://github.com/icorvoh/XUPT-FE/issues/6)：为每一个加盟的学长学姐放入展示块，任何人可以申请加盟
-- [ ] [“关于前端圈”](https://github.com/icorvoh/XUPT-FE/issues/7)：西邮前端圈的宗旨，西邮前端圈的发展时间线、加入西邮前端圈
-- [ ] [“即刻编程”](https://github.com/icorvoh/XUPT-FE/issues/13)：提供的基于 JS Bin 的在线编程服务，每个人均可以直接开始入手前端开发。
+- [X] [主页](https://github.com/creatshare/xiyoucircle/issues/1)：首页展示，六大社群的扫码加入。
+- [ ] [西邮包](https://github.com/creatshare/xiyoucircle/issues/22)：大学生需要的各种技术资源、软件包、学习资料、复习资料、拓展资料的汇总分享。
+- [ ] [西邮实验室(社群)](https://github.com/creatshare/xiyoucircle/issues/2)：加入 QQ 社群、展示加盟的西邮实验室，任何人可以代表其实验室申请加盟。
+- [ ] [西邮前端圈(社群)](https://github.com/creatshare/xiyoucircle/issues/17)：加入 QQ 社群、前端咨询站(国内各大前端团队技术周刊汇总、推荐必读技术博文汇总)、前端路线图(前期从网络上收集多个路线图并展示，后期用可视化技术绘出原创前端路线图)。
+- [ ] [西邮后端圈(社群)](https://github.com/creatshare/xiyoucircle/issues/18)：加入 QQ 社群。
+- [ ] [西邮竞赛圈(社群)](https://github.com/creatshare/xiyoucircle/issues/19)：加入 QQ 社群。
+- [ ] [西邮产品圈(社群)](https://github.com/creatshare/xiyoucircle/issues/20)：加入 QQ 社群。
+- [ ] [西邮硬件圈(社群)](https://github.com/creatshare/xiyoucircle/issues/21)：加入 QQ 社群。
+- [ ] [关于我们](https://github.com/creatshare/xiyoucircle/issues/7)：西邮前端圈的宗旨、西邮技术圈的发展时间线、加入西邮前端圈。
 
 其中，各页面模块具体信息为：
 
 |页面模块|在线网址|
 |----|----|
-|西邮前端圈|[http://xupt-fe.top/](http://xupt-fe.top/index)|
-|西邮实验室|[http://xupt-fe.top/lab](http://xupt-fe.top/lab)|
-|前端咨询站|[http://xupt-fe.top/info](http://xupt-fe.top/info)|
-|前端路线图|[http://xupt-fe.top/roadmap](http://xupt-fe.top/roadmap)|
-|西邮大牛展|[http://xupt-fe.top/leader](http://xupt-fe.top/leader)|
-|关于前端圈|[http://xupt-fe.top/about](http://xupt-fe.top/about)|
-|即刻编程|[http://xupt-fe.top/coding](http://xupt-fe.top/coding)|
+|西邮实验室|[http://xiyoucircle.top/laboratory](http://xiyoucircle.top/laboratory)|
+|西邮前端圈|[http://xiyoucircle.top/frontend](http://xiyoucircle.top/frontend)|
+|西邮后端圈|[http://xiyoucircle.top/server](http://xiyoucircle.top/server)|
+|西邮竞赛圈|[http://xiyoucircle.top/contest](http://xiyoucircle.top/contest)|
+|西邮产品圈|[http://xiyoucircle.top/project](http://xiyoucircle.top/project)|
+|西邮硬件圈|[http://xiyoucircle.top/hardware](http://xiyoucircle.top/hardware)|
 
 # 技术栈
 
@@ -53,11 +54,10 @@
 
 # 核心贡献者
 
-* [韩亦乐@icorvoh](https://github.com/icorvoh)
+* [韩亦乐@hylerrix](https://github.com/hylerrix)
 * [王智@Joe19970619](https://github.com/Joe19970619)
-* [任林东@adong11](https://github.com/adong11)
 * [王玥珂@Demoiselle7](https://github.com/Demoiselle7)
-* [魏秋娟@CallmePapa](https://github.com/CallmePapa)
+* [任林东@adong11](https://github.com/adong11)
 
 # 加入我们
 
@@ -76,6 +76,11 @@
 更多资讯：
 
 * “西邮前端圈” QQ 群：541957278
+* “西邮后端圈” QQ 群：99048567
+* “西邮实验室” QQ 群：832905332
+* “西邮硬件圈” QQ 群：874751999
+* “西邮竞赛圈” QQ 群：874635940
+* “西邮产品圈” QQ 群：821064484
 * 如果觉得这个项目不错的话，欢迎在本仓库右上角中点击 ```Star```
 
 # LICENSE
