@@ -1,10 +1,7 @@
 {
-  "name": "xupt-fe",
+  "name": "xiyoucircle",
   "version": "0.0.1",
-  "private": true,
-  "homepage": "",
-  "description": "XUPT-FE",
-  "main": "",
+  "description": "西邮开源社",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --config webpack.dev.js",
@@ -42,9 +39,9 @@
   ],
   "keywords": [],
   "author": {
-    "name": "icorvoh",
-    "email": "icorvoh@gmail.com",
-    "url": "https://github.com/icorvoh"
+    "name": "hylerrix",
+    "email": "hylerrix@foxmail.com",
+    "url": "https://github.com/hylerrix"
   },
   "license": "MIT"
 }
