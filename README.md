@@ -1,6 +1,6 @@
 # 西邮开源社
 
-![](./material/earlyBirds.jpg)
+![](./public/earlyBirds.jpg)
 
 本项目最终使用 Vue CLI 3 重构。
 
@@ -9,8 +9,8 @@
 “西邮开源社”前期功能将会有：
 
 - [X] [西邮开源社](https://github.com/ningowood/xiyoucircle/issues/1)：首页展示，功能介绍，社群扫码加入。
-- [ ] [西邮实验室](https://github.com/ningowood/xiyoucircle/issues/2)：展示加盟的西邮实验室，任何人可以代表其实验室申请加盟。
-- [ ] [关于开源社](https://github.com/ningowood/xiyoucircle/issues/7)：西邮前端圈的宗旨、西邮技术圈的发展时间线、加入西邮前端圈。
+- [x] [西邮实验室](https://github.com/ningowood/xiyoucircle/issues/2)：展示加盟的西邮实验室，任何人可以代表其实验室申请加盟。
+- [x] [关于开源社](https://github.com/ningowood/xiyoucircle/issues/7)：西邮前端圈的宗旨、西邮技术圈的发展时间线、加入西邮前端圈。
 
 # 技术栈
 
