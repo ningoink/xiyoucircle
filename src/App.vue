@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="欢迎来到西邮开源社"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './views/HelloWorld.vue'
+import Home from './views/home/index.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
+    Home
   }
 }
 </script>
@@ -23,6 +22,43 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #34495e;
+    font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+div {
+    display: block;
+}
+
+a {
+    color: #34495e;
+    text-decoration: none;
+}
+
+
 </style>
