@@ -1,44 +1,40 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div id="app" >
+    <!-- 根据弹出框显示状态，给每个页面根元素加入模糊效果并跟踪相关点击事件 -->
+    <router-view 
+      v-bind:class="{ filter: qrIsShow }">
+    </router-view>
+    <qr-dialog v-if="qrIsShow"></qr-dialog>
   </div>
 </template>
 
 <script>
-import Home from './views/home/index.vue'
+import QrDialog from '@/components/qr-dialog'
+import Home from '@/views/home/index.vue'
 
 export default {
   name: 'App',
   components: {
+    QrDialog,
     Home
+  },
+  data: function () {
+    return {
+      qrIsShow: false
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
+/* reset.css */
 * {
     margin: 0;
     padding: 0;
 }
 
-@media screen and (min-width: 750px) {
-    html {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    html {
-        font-size: 15px;
-    }
+html {
+    font-size: 15px;
 }
 
 body {
@@ -51,14 +47,21 @@ body {
     overflow-x: hidden;
 }
 
-div {
-    display: block;
-}
-
 a {
     color: #34495e;
     text-decoration: none;
 }
 
-
+.filter {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    -webkit-animation: row_ani 2s;
+    -moz-animation: row_ani 2s;
+    -ms-animation: row_ani 2s;
+    animation: row_ani 2s;
+    background-color: rgba(24, 24, 24, 0.42);
+}
 </style>
