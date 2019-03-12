@@ -23,7 +23,6 @@ export default {
 
 <style scoped>
 #dialog {
-    /* display: none; */
     position: absolute;
     width: 100%;
     height: 100%;
@@ -39,7 +38,8 @@ export default {
     left: 0;
     bottom: 0;
     margin: 0px auto;
-    height: 20rem;
+    height: 450px;
+    width: 340px;
     text-align: center;
 }
 
