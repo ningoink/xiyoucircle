@@ -1,6 +1,7 @@
 <template>
   <div id="app" >
     <!-- 根据弹出框显示状态，给每个页面根元素加入模糊效果并跟踪相关点击事件 -->
+    <!-- <button v-on:click="toggleQrDialog">open</button> -->
     <router-view 
       v-bind:class="{ filter: qrIsShow }">
     </router-view>
@@ -18,9 +19,15 @@ export default {
     QrDialog,
     Home
   },
-  data: function () {
-    return {
-      qrIsShow: false
+  computed: {
+    qrIsShow () {
+      return this.$store.state.qrDialog.opened
+    }
+  },
+  methods: {
+    toggleQrDialog () {
+      console.log(this.$store)
+      this.$store.dispatch('toggleQrDialog')
     }
   }
 }
