@@ -1,23 +1,26 @@
 <template>
-  <div id="lab">
-      <app-nav></app-nav>
-    <section class="content">
-        <!--<img src="./img/background-img2.png" alt="背景图片" class="content__background-img">-->
-        <div class="content__wrap">
+    <div id="lab">
+        <app-nav></app-nav>
+        <lab-content></lab-content>
+
+
+    <!-- <section class="content">
+        
+        <div class="content__wrap"> -->
             <!--标题-->
-            <div class="content__heading">
+            <!-- <div class="content__heading">
                 <p>西邮实验室</p>
-            </div>
+            </div> -->
             <!--下划线-->
-            <div class="content__underline">
+            <!-- <div class="content__underline">
                 <span>—</span>
-            </div>
+            </div> -->
             <!--副标题-->
-            <div class="content__subheading">
+            <!-- <div class="content__subheading">
                 <p>西安邮电大学已加盟实验室，一起打造西邮的前端实验室</p>
-            </div>
+            </div> -->
             <!--主内容-->
-            <div class="content__main-content">
+            <!-- <div class="content__main-content">
                 <div class="content__main-content_row">
                     <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
@@ -225,6 +228,9 @@
             </div>
         </div>
     </section>
+ -->
+
+
 <app-footer></app-footer>
   </div>
 </template>
@@ -232,13 +238,16 @@
 <script>
 import AppFooter from '@/components/app-footer'
 import AppNav from '@/components/app-nav'
+import LabContent from '@/views/lab/lab-content'
+
 
 
 export default {
   name: 'Lab',
   components: {
       AppFooter,
-      AppNav
+      AppNav,
+      LabContent
   }
 }
 </script>
