@@ -2,18 +2,8 @@
    <section id="lab-content" class="content">
         <!--<img src="./img/background-img2.png" alt="背景图片" class="content__background-img">-->
         <div class="content__wrap">
-            <!--标题-->
-            <div class="content__heading">
-                <p>西邮实验室</p>
-            </div>
-            <!--下划线-->
-            <div class="content__underline">
-                <span>—</span>
-            </div>
-            <!--副标题-->
-            <div class="content__subheading">
-                <p>西安邮电大学已加盟实验室，一起打造西邮的前端实验室</p>
-            </div>
+            <!-- 标题区 -->
+            <content-subheading></content-subheading>
             <!--主内容-->
             <div class="content__main-content">
                 <div class="content__main-content_row">
@@ -226,8 +216,13 @@
 </template>
 
 <script>
+import ContentSubheading from '@/components/content-subheading'
+
 export default {
-    name: 'LabContent'
+    name: 'LabContent',
+    components: {
+        ContentSubheading
+    }
 }
 </script>
 
