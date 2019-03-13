@@ -5,7 +5,7 @@
         <nav class="header__nav">
             <a href="./lab.html" target="_self" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">西邮实验室</a>
             <a href="./about.html" target="_self" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">关于前端圈</a>
-            <a href="https://jsfiddle.net/" target="_blank" class="header__nav-item header__nav-item_custom_button">加入我们</a>
+            <a href="#" id="openJoinQR" v-on:click="openJoinQR" class="header__nav-item header__nav-item_custom_button">加入我们</a>
             <div class="header__nav-item-tip"></div>
         </nav>
     </header>
