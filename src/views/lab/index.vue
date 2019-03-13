@@ -1,15 +1,6 @@
 <template>
   <div id="lab">
-    <header class="header">
-        <a href="./index.html" target="_self" class="header__logo">西邮开源社</a>
-        <nav class="header__nav">
-            <a href="./lab.html" target="_self" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">西邮实验室</a>
-            <a href="./about.html" target="_self" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">关于前端圈</a>
-            <a href="https://jsfiddle.net/" target="_blank" class="header__nav-item header__nav-item_custom_button">加入我们</a>
-            <div class="header__nav-item-tip"></div>
-        </nav>
-    </header>
-
+      <app-nav></app-nav>
     <section class="content">
         <!--<img src="./img/background-img2.png" alt="背景图片" class="content__background-img">-->
         <div class="content__wrap">
@@ -234,13 +225,21 @@
             </div>
         </div>
     </section>
-
+<app-footer></app-footer>
   </div>
 </template>
 
 <script>
+import AppFooter from '@/components/app-footer'
+import AppNav from '@/components/app-nav'
+
+
 export default {
-  name: 'Lab'
+  name: 'Lab',
+  components: {
+      AppFooter,
+      AppNav
+  }
 }
 </script>
 
@@ -279,7 +278,7 @@ a:hover {
   height: 40px;
   margin: 10px 0px 0px 60px;
   padding: 0px 0px 0px 50px;
-  background: url('../../assets/logo.png') left center no-repeat;
+  /* background: url('../../assets/logo.png') left center no-repeat; */
   display: block;
   font-size: 18px;
   line-height: 40px;
