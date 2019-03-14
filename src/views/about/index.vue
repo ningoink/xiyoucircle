@@ -1,5 +1,6 @@
 <template>
     <div id="about">
+        <github-header></github-header>
         <header class="leader">
             <h1>关于开源社</h1>
             <p>西邮开源社从灵感到上线，都发生了什么？</p>
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+import GithubHeader from '@/components/github-header'
 import CardTimeline from './card-timeline'
 import CardArticle from './card-article'
 import CardDeveloper from './card-developer'
@@ -20,6 +22,7 @@ import AppFooter from '@/components/app-footer'
 export default {
     name: 'About',
     components: {
+        GithubHeader,
         CardTimeline,
         CardArticle,
         CardDeveloper,
