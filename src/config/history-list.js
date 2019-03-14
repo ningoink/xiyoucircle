@@ -12,7 +12,7 @@ export const HISTORY_LIST = [{
     ],
 }, {
     id: 2,
-    subtitle: '“西邮前端圈”原型图设计与后续分工',
+    subtitle: '“西邮前端圈”原型设计与后续分工',
     date: '2017-10-24',
     text: [
         '- 建立“西邮前端圈”官网开源仓库，向所有人开放',
@@ -33,7 +33,7 @@ export const HISTORY_LIST = [{
     ],
 }, {
     id: 4,
-    subtitle: '“西邮实验室”宣传计划正式拉开帷幕',
+    subtitle: '“西邮实验室”建立并宣传',
     date: '2018-08-22',
     text: [
         '- 时隔良久，建立“西邮实验室”Q 群正式宣传。',
@@ -42,7 +42,7 @@ export const HISTORY_LIST = [{
     ],
 }, {
     id: 5,
-    subtitle: '“西邮区块链”Q 群助力”链上西邮“活动顺利进行',
+    subtitle: '“西邮区块链”Q 群助力校内分享活动',
     date: '2018-12-05',
     text: [
         '- 建立“西邮区块链”Q 群，帮助“Node 区块链加速器”宣校内分享活动。',
@@ -55,7 +55,7 @@ export const HISTORY_LIST = [{
     ],
 }, {
     id: 6,
-    subtitle: '整合灵感链，打造“西邮开源社”新品牌',
+    subtitle: '梳理灵感链，打造“西邮开源社”新品牌',
     date: '2019-03-06',
     text: [
         '- 规划整合所有社区 Q 群，打造社区新品牌。',
@@ -66,7 +66,7 @@ export const HISTORY_LIST = [{
     ],
 }, {
     id: 7,
-    subtitle: '“西邮开源社”正式上线，整合 Q 群并宣传',
+    subtitle: '“西邮开源社”上线，整合 Q 群并宣传',
     date: '2019-xx-xx',
     text: [
         '- 正式将所有社区 Q 群整合至“西邮前端圈”QQ 群，并更名为“西邮开源社”。',

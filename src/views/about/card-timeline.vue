@@ -1,22 +1,36 @@
 <template>
     <section id=timeline>
-        <h1>关于开源社</h1>
-        <p class="leader">西邮开源社从灵感到上线，到底都发生了什么？</p>
         <div class="demo-card-wrapper">
             <div class="demo-card demo-card--step1">
                 <div class="head">
                     <div class="number-box">
                         <span>01</span>
                     </div>
-                    <h2><span class="small">Subtitle</span> Technology</h2>
+                    <h2>
+                        <!-- <span class="small">Subtitle</span> -->
+                        “西邮前端圈”从灵感到宣传
+                    </h2>
                 </div>
                 <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="http://placehold.it/1000x500" alt="Graphic">
+                    <p>- 受同级校友之邀，参考“西电前端圈”，建立“西邮前端圈”。</p>
+                    <p>- 宣传“西邮前端圈” Q 群，今日达到 150 人。</p>
+                    <p>- 开启群内电子书、视频资料共享。</p>
+                    <p>- 确定首要产品主线——“西邮前端圈”官网，其中构思如下功能：</p>
+                    <p>- “西邮前端圈”、“西邮实验室”、“关于前端圈”。</p>
+                    <p>- 宣传渠道有微信公众号文章、西邮各大 QQ 群和西邮置顶贴吧。</p>
+                </div>
+                <div class="foot">
+                    <div class="calendar">
+                        <!-- icon -->&nbsp;
+                    </div>
+                    <div class="date">2019-01-01</div>
+                    <div class="icon">
+                        <!-- icon -->&nbsp;
+                    </div>
                 </div>
             </div>
 
-            <div class="demo-card demo-card--step2">
+            <!-- <div class="demo-card demo-card--step2">
                 <div class="head">
                     <div class="number-box">
                         <span>02</span>
@@ -25,7 +39,6 @@
                 </div>
                 <div class="body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="http://placehold.it/1000x500" alt="Graphic">
                 </div>
             </div>
 
@@ -38,7 +51,6 @@
                 </div>
                 <div class="body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="http://placehold.it/1000x500" alt="Graphic">
                 </div>
             </div>
 
@@ -51,7 +63,6 @@
                 </div>
                 <div class="body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="http://placehold.it/1000x500" alt="Graphic">
                 </div>
             </div>
 
@@ -64,17 +75,21 @@
                 </div>
                 <div class="body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="http://placehold.it/1000x500" alt="Graphic">
                 </div>
-            </div>
-        
+            </div> -->
         </div>
     </section>
 </template>
 
 <script>
+import HISTORY_LIST from '@/config/history-list'
+
 export default {
-    name: 'CardTimeline'
+    name: 'CardTimeline',
+    data: function () {
+        return {
+        }
+    }
 }
 </script>
 
@@ -113,8 +128,9 @@ $rows: ceil($items/2);
 
 /* Card sizing */
 
-$card-height: 400px;
-$card-width: 450px;
+$card-height: 300px;
+$card-width: 400px;
+$foot-height: 40px;
 $inner-margin: 15px;
 $number-size: 35px;
 $stagger: 180px;
@@ -192,12 +208,6 @@ body {
     font-size: 3rem;
     font-weight: 200;
     margin-bottom: 20px;
-  }
-  p.leader {
-    text-align: center;
-    max-width: 90%;
-    margin: auto;
-    margin-bottom: 45px;
   }
   .demo-card-wrapper {
     position: relative;
@@ -293,10 +303,9 @@ body {
         font-weight: inherit;
         letter-spacing: 2px;
         margin: 0;
-        padding-bottom: 6px;
         line-height: 1rem;
         @include mq-sm {
-          font-size: 165%;
+          font-size: 105%;
           line-height: 1.2rem;
         }
         span {
@@ -315,16 +324,34 @@ body {
       border-top: 0;
       padding: $inner-margin;
       @include mq-lg {
-        height: $body-height;
+        height: $body-height - $foot-height;
       }
       p {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 12px;
+        line-height: 6px;
         margin-bottom: $inner-margin;
       }
-      img {
-        display: block;
-        width: 100%;
+    }
+    .foot {
+      background: #fff;
+      border: $border;
+      border-top: 0;
+      height: $foot-height;
+      div {
+        height: 100%;
+        display: inline-block;
+        text-align: center;
+        line-height: $foot-height;
+      }
+      .calendar {
+        width: $foot-height;
+      }
+      .date {
+        width: $foot-height * 2;
+      }
+      .icon {
+        width: $foot-height;
+        float: right;
       }
     }
     @for $i from 1 through $items {
