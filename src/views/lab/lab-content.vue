@@ -13,16 +13,19 @@
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
                                      <p>
-                                        实验室方向: {{ item.title }}
+                                        {{ detail.name }}
+                                     </p>
+                                     <p>
+                                        实验室方向: {{ detail.direction }}
                                      </p>
                             </div>
                         </div>
                         <div class="content__main-content_i_bottom">
                             <div>
-                                <i class="fa fa-tags"></i> <span>计算机学院</span>
+                                <i class="fa fa-tags"></i> <span>{{ detail.from }}</span>
                             </div>
                             <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
+                                <i class="fa fa-calendar-minus-o"></i> <span>{{ detail.date }}</span>
                             </div>
                             <div class="content__main-content_i_bottom_icon">
                                 <i class="fa fa-github-alt fa-lg"></i>
