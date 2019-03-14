@@ -22,14 +22,14 @@ const routes = new Router({
         //         title: '西邮实验室'
         //     }
         // },
-        // {
-        //     path: '/about',
-        //     name: 'About',
-        //     component: () => import(`@/views/about/index.vue`),
-        //     meta: {
-        //         title: '关于开源社'
-        //     }
-        // }
+        {
+            path: '/about',
+            name: 'About',
+            component: () => import(`@/views/about/index.vue`),
+            meta: {
+                title: '关于开源社'
+            }
+        }
     ]
 })
 
