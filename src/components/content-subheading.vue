@@ -21,12 +21,7 @@ export default {
 </script>
 
 <style>
-.content__heading {
-  margin-top: 40px;
-  line-height: 20px;
-  font-size: 24px;
-  color: #07111b;
-}
+
 .content__underline {
   color: #20a0ff;
   font-size: 20px;
