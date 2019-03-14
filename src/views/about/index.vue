@@ -7,6 +7,7 @@
         <card-timeline></card-timeline>
         <card-article></card-article>
         <card-developer></card-developer>
+        <app-footer></app-footer>
     </div>
 </template>
 
@@ -14,19 +15,20 @@
 import CardTimeline from './card-timeline'
 import CardArticle from './card-article'
 import CardDeveloper from './card-developer'
+import AppFooter from '@/components/app-footer'
 
 export default {
     name: 'About',
     components: {
         CardTimeline,
         CardArticle,
-        CardDeveloper
+        CardDeveloper,
+        AppFooter
     }
 }
 </script>
 
 <style scoped>
-
 .leader {
     text-align: center;
     max-width: 90%;
