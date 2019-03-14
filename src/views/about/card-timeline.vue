@@ -1,13 +1,35 @@
 <template>
-    <section id=timeline>
+    <section id="timeline">
         <div class="demo-card-wrapper">
-            <div class="demo-card demo-card--step1">
+            <template v-for="(item, i) in historyList">
+                <div :key="item.id" class="demo-card" :class="'demo-card--step' + (i+1)">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>{{ '0' + item.id }}</span>
+                        </div>
+                        <h2>{{ item.title }}</h2>
+                    </div>
+                    <div class="body">
+                        <p v-for="(t, j) in item.text" :key="j">{{ t }}</p>
+                    </div>
+                    <div class="foot">
+                        <div class="calendar">
+                            <!-- icon -->&nbsp;
+                        </div>
+                        <div class="date">2019-01-01</div>
+                        <div class="icon">
+                            <!-- icon -->&nbsp;
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <!-- <div class="demo-card demo-card--step5">
                 <div class="head">
                     <div class="number-box">
                         <span>01</span>
                     </div>
                     <h2>
-                        <!-- <span class="small">Subtitle</span> -->
                         “西邮前端圈”从灵感到宣传
                     </h2>
                 </div>
@@ -21,60 +43,12 @@
                 </div>
                 <div class="foot">
                     <div class="calendar">
-                        <!-- icon -->&nbsp;
+                        &nbsp;
                     </div>
                     <div class="date">2019-01-01</div>
                     <div class="icon">
-                        <!-- icon -->&nbsp;
+                        &nbsp;
                     </div>
-                </div>
-            </div>
-
-            <!-- <div class="demo-card demo-card--step2">
-                <div class="head">
-                    <div class="number-box">
-                        <span>02</span>
-                    </div>
-                    <h2><span class="small">Subtitle</span> Confidence</h2>
-                </div>
-                <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                </div>
-            </div>
-
-            <div class="demo-card demo-card--step3">
-                <div class="head">
-                    <div class="number-box">
-                        <span>03</span>
-                    </div>
-                    <h2><span class="small">Subtitle</span> Adaptation</h2>
-                </div>
-                <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                </div>
-            </div>
-
-            <div class="demo-card demo-card--step4">
-                <div class="head">
-                    <div class="number-box">
-                        <span>04</span>
-                    </div>
-                    <h2><span class="small">Subtitle</span> Consistency</h2>
-                </div>
-                <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                </div>
-            </div>
-
-            <div class="demo-card demo-card--step5">
-                <div class="head">
-                    <div class="number-box">
-                        <span>05</span>
-                    </div>
-                    <h2><span class="small">Subtitle</span> Conversion</h2>
-                </div>
-                <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
                 </div>
             </div> -->
         </div>
@@ -82,12 +56,13 @@
 </template>
 
 <script>
-import HISTORY_LIST from '@/config/history-list'
+import { HISTORY_LIST } from '@/config/history-list'
 
 export default {
     name: 'CardTimeline',
     data: function () {
         return {
+            historyList: HISTORY_LIST
         }
     }
 }
@@ -123,13 +98,13 @@ export default {
 $background: #f7f7f7;
 $box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
 $border: 1px solid rgba(191, 191, 191, 0.4);
-$items: 5;
+$items: 7;
 $rows: ceil($items/2);
 
 /* Card sizing */
 
 $card-height: 300px;
-$card-width: 400px;
+$card-width: 450px;
 $foot-height: 40px;
 $inner-margin: 15px;
 $number-size: 35px;
@@ -139,16 +114,19 @@ $marker-size: 9px;
 
 /* Colors */
 
-$steps: #46b8e9;
-$colors: #46b8e9,
-#3ee9d1,
-#ce43eb,
-#4d92eb;
+$steps: #ff6100;
+$colors: #ff4081,
+#259b24,
+#ff9800,
+#3551b5,
+#009688,
+#e51c23;
 $timeline: #bdbdbd;
 
 /* Calculations */
 
-$container-height: $rows * ($card-height + $outer-margin) + $stagger;
+// $container-height: $rows * ($card-height + $outer-margin) + $stagger ;
+$container-height: $rows * ($card-height + $outer-margin);
 $container-width: $card-width*2 + $outer-margin*3;
 $head-height: $number-size + 50;
 $body-height: $card-height - $head-height;
@@ -199,7 +177,6 @@ body {
 }
 
 #timeline {
-  padding: 100px 0;
   background: $background;
   border-top: $border;
   border-bottom: $border;

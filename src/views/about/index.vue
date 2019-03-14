@@ -1,5 +1,5 @@
 <template>
-    <div id="lab">
+    <div id="about">
         <header class="leader">
             <h1>关于开源社</h1>
             <p>西邮开源社从灵感到上线，都发生了什么？</p>
