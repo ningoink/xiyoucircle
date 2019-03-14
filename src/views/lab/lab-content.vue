@@ -4,6 +4,7 @@
         <div class="content__wrap">
             <!-- 标题区 -->
             <content-subheading></content-subheading>
+            <lab-search></lab-search>
             <!--主内容-->
             <div class="content__main-content" v-for="detail in LabDetail" v-bind:key="detail.id">
                 <div class="content__main-content_row">
@@ -51,161 +52,29 @@
                             </div>
                             
                         </div>
-                    </div> 
-
-
-                    
+                    </div>    
                     <div class="content__main-content_i makePerfect">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
-                                <p>CreatShare实验室</p>
-                                <p>实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发</p>
+                                <p>
+                                        {{ detail.name }}
+                                     </p>
+                                     <p>
+                                        实验室方向: {{ detail.direction }}
+                                     </p>
                             </div>
                         </div>
                         <div class="content__main-content_i_bottom">
                             <div>
-                                <i class="fa fa-tags"></i> <span>计算机学院</span>
+                                <i class="fa fa-tags"></i> <span>{{ detail.from }}</span>
                             </div>
                             <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
+                                <i class="fa fa-calendar-minus-o"></i> <span>{{ detail.date }}</span>
                             </div>
                             
                         </div>
                     </div>
-
-
-                </div>
-
-
-                <div class="content__main-content_row">
-
-                    <div class="content__main-content_i">
-                        <div class="content__main-content_i_top">
-                            <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
-                            <div class="content__main-content_i_top_content">
-                                <p>CreatShare实验室</p>
-                                <p>实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发</p>
-                            </div>
-                        </div>
-                        <div class="content__main-content_i_bottom">
-                            <div>
-                                <i class="fa fa-tags"></i> <span>计算机学院</span>
-                            </div>
-                            <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-
-                    <div class="content__main-content_i">
-                        <div class="content__main-content_i_top">
-                            <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
-                            <div class="content__main-content_i_top_content">
-                                <p>CreatShare实验室</p>
-                                <p>实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发</p>
-                            </div>
-                        </div>
-                        <div class="content__main-content_i_bottom">
-                            <div>
-                                <i class="fa fa-tags"></i> <span>计算机学院</span>
-                            </div>
-                            <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
-                            </div>
-                            
-                        </div>
-                    </div> 
-
-
-                     <div class="content__main-content_i makePerfect">
-                        <div class="content__main-content_i_top">
-                            <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
-                            <div class="content__main-content_i_top_content">
-                                <p>CreatShare实验室</p>
-                                <p>实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发</p>
-                            </div>
-                        </div>
-                        <div class="content__main-content_i_bottom">
-                            <div>
-                                <i class="fa fa-tags"></i> <span>计算机学院</span>
-                            </div>
-                            <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
-                            </div>
-                            
-                        </div>
-                    </div> 
-
-
-                </div>
-
-
-                <div class="content__main-content_row">
-
-                     <div class="content__main-content_i">
-                        <div class="content__main-content_i_top">
-                            <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
-                            <div class="content__main-content_i_top_content">
-                                <p>CreatShare实验室</p>
-                                <p>实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发</p>
-                            </div>
-                        </div>
-                        <div class="content__main-content_i_bottom">
-                            <div>
-                                <i class="fa fa-tags"></i> <span>计算机学院</span>
-                            </div>
-                            <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
-                            </div>
-                            
-                        </div>
-                    </div>
-
- -->
-
-                    <div class="content__main-content_i">
-                        <div class="content__main-content_i_top">
-                            <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
-                            <div class="content__main-content_i_top_content">
-                                <p>CreatShare实验室</p>
-                                <p>实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发</p>
-                            </div>
-                        </div>
-                        <div class="content__main-content_i_bottom">
-                            <div>
-                                <i class="fa fa-tags"></i> <span>计算机学院</span>
-                            </div>
-                            <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-
-                    <div class="content__main-content_i makePerfect">
-                        <div class="content__main-content_i_top">
-                            <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
-                            <div class="content__main-content_i_top_content">
-                                <p>CreatShare实验室</p>
-                                <p>实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发</p>
-                            </div>
-                        </div>
-                        <div class="content__main-content_i_bottom">
-                            <div>
-                                <i class="fa fa-tags"></i> <span>计算机学院</span>
-                            </div>
-                            <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
-                            </div>
-                            
-                        </div>
-                    </div> 
-
-                    
                 </div>
             </div>
         </div>
@@ -214,12 +83,15 @@
 
 <script>
 import ContentSubheading from '@/components/content-subheading'
+import LabSearch from '@/components/lab-search'
+
 import { LAB_DETAIL } from '@/config/lab-detail'
 
 export default {
     name: 'LabContent',
     components: {
-        ContentSubheading
+        ContentSubheading,
+        LabSearch
     },
     data: function() {
         return{
