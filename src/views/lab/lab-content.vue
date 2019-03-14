@@ -13,7 +13,7 @@
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
                                      <p>
-                                        {{ item.title }}
+                                        实验室方向: {{ item.title }}
                                      </p>
                             </div>
                         </div>
