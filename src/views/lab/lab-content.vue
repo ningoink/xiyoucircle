@@ -5,7 +5,7 @@
             <!-- 标题区 -->
             <content-subheading></content-subheading>
             <!--主内容-->
-            <div class="content__main-content" v-for="item in items" v-bind:key="item.id" v-bind:title="item.title">
+            <div class="content__main-content" v-for="detail in LabDetail" v-bind:key="detail.id">
                 <div class="content__main-content_row">
 
                     <div class="content__main-content_i">
@@ -244,6 +244,7 @@
 
 <script>
 import ContentSubheading from '@/components/content-subheading'
+import { LAB_DETAIL } from '@/config/lab-detail'
 
 export default {
     name: 'LabContent',
@@ -252,10 +253,7 @@ export default {
     },
     data: function() {
         return{
-            items: [
-                { id: 1, title: 'CreatShare实验室'},
-                { id: 2, title: '实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发'}
-       ]
+            LabDetail: LAB_DETAIL
         }
 
     //        "subtitle": [
