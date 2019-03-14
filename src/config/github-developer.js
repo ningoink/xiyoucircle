@@ -1,0 +1,29 @@
+export const GITHUB_DEVELOPER = [{
+    id: 1,
+    name: '韩亦乐',
+    class: '软件工程',
+    year: '2019',
+    avatar: 'https://avatars0.githubusercontent.com/u/19285461?s=460&v=4',
+    github: 'https://github.com/hylerrix'
+}, {
+    id: 2,
+    name: '王冬梅',
+    class: '软件工程',
+    year: '2019',
+    avatar: 'https://avatars1.githubusercontent.com/u/25200451?s=460&v=4',
+    github: 'https://github.com/WolfGirlM'
+}, {
+    id: 3,
+    name: '王智',
+    class: '光电信息科学与工程',
+    year: '2019',
+    avatar: 'https://avatars0.githubusercontent.com/u/23612986?s=460&v=4',
+    github: 'https://github.com/Joe19970619'
+}, {
+    id: 4,
+    name: '王玥珂',
+    class: '应用物理',
+    year: '2019',
+    avatar: 'https://avatars0.githubusercontent.com/u/22954581?s=460&v=4',
+    github: 'https://github.com/Demoiselle7'
+}]

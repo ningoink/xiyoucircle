@@ -20,7 +20,7 @@
             </ul>
             <p>
                 <a href="https://github.com/ningowood/xiyoucircle/" target="_blank">Github</a>
-                <a href="#" id="openJoinQR" v-on:click="openJoinQR">加入我们</a>
+                <a href="#" id="openJoinQR" v-on:click="toggleQrDialog">加入我们</a>
             </p>
         </div>
     </section>
@@ -29,14 +29,9 @@
 <script>
 export default {
     name: 'Card1',
-    data: function () {
-        return {
-            qrDialog: false
-        }
-    },
     methods: {
-        openJoinQR: function () {
-            // this.qrDialog = true
+        toggleQrDialog () {
+            this.$store.dispatch('qrDialog/toggleQrDialog')
         }
     }
 }
