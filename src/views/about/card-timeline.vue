@@ -23,34 +23,6 @@
                     </div>
                 </div>
             </template>
-
-            <!-- <div class="demo-card demo-card--step5">
-                <div class="head">
-                    <div class="number-box">
-                        <span>01</span>
-                    </div>
-                    <h2>
-                        “西邮前端圈”从灵感到宣传
-                    </h2>
-                </div>
-                <div class="body">
-                    <p>- 受同级校友之邀，参考“西电前端圈”，建立“西邮前端圈”。</p>
-                    <p>- 宣传“西邮前端圈” Q 群，今日达到 150 人。</p>
-                    <p>- 开启群内电子书、视频资料共享。</p>
-                    <p>- 确定首要产品主线——“西邮前端圈”官网，其中构思如下功能：</p>
-                    <p>- “西邮前端圈”、“西邮实验室”、“关于前端圈”。</p>
-                    <p>- 宣传渠道有微信公众号文章、西邮各大 QQ 群和西邮置顶贴吧。</p>
-                </div>
-                <div class="foot">
-                    <div class="calendar">
-                        &nbsp;
-                    </div>
-                    <div class="date">2019-01-01</div>
-                    <div class="icon">
-                        &nbsp;
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
 </template>
@@ -104,7 +76,7 @@ $rows: ceil($items/2);
 /* Card sizing */
 
 $card-height: 300px;
-$card-width: 450px;
+$card-width: 500px;
 $foot-height: 40px;
 $inner-margin: 15px;
 $number-size: 35px;
@@ -114,13 +86,14 @@ $marker-size: 9px;
 
 /* Colors */
 
-$steps: #ff6100;
-$colors: #ff4081,
-#259b24,
-#ff9800,
-#3551b5,
+$colors: 
+#e51c23,
 #009688,
-#e51c23;
+#3551b5,
+#ff9800,
+#259b24,
+#ff4081,
+#ff6100;
 $timeline: #bdbdbd;
 
 /* Calculations */
@@ -223,7 +196,8 @@ body {
       max-width: 40%;
     }
     @include mq-lg {
-      max-width: $card-width;
+      // max-width: $card-width;
+      width: $card-width;
       height: $card-height;
       margin: $outer-margin;
       margin-top: $outer-margin/2;
@@ -266,7 +240,6 @@ body {
       font-weight: 400;
       .number-box {
         display: inline;
-        float: left;
         margin: $inner-margin;
         padding: 10px;
         font-size: $number-size;
@@ -282,7 +255,7 @@ body {
         margin: 0;
         line-height: 1rem;
         @include mq-sm {
-          font-size: 105%;
+          font-size: 130%;
           line-height: 1.2rem;
         }
         span {
@@ -333,7 +306,7 @@ body {
     }
     @for $i from 1 through $items {
       &--step#{$i} {
-        $color: nth($colors, ((($i - 1) % 4) + 1));
+        $color: nth($colors, $i);
         background-color: $color;
         .head::after {
           border-color: $color;
