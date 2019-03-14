@@ -2,15 +2,21 @@
   "name": "xiyoucircle",
   "version": "0.1.0",
   "description": "西邮开源社",
-  "main": "",
-  "scripts": {
-    "start": "npm run serve",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+  "author": {
+    "name": "hylerrix",
+    "email": "hylerrix@foxmail.com",
+    "url": "https://github.com/hylerrix"
   },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "start": "npm run serve"
+  },
+  "main": "",
   "dependencies": {
     "vue": "^2.6.6",
     "vue-router": "^3.0.2",
+    "vuetify": "^1.5.5",
     "vuex": "^3.1.0"
   },
   "devDependencies": {
@@ -18,7 +24,11 @@
     "@vue/cli-service": "^3.5.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.5.21"
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vue-cli-plugin-vuetify": "^0.5.0",
+    "vue-template-compiler": "^2.5.21",
+    "vuetify-loader": "^1.0.5"
   },
   "postcss": {
     "plugins": {
@@ -31,10 +41,5 @@
     "not ie <= 8"
   ],
   "keywords": [],
-  "author": {
-    "name": "hylerrix",
-    "email": "hylerrix@foxmail.com",
-    "url": "https://github.com/hylerrix"
-  },
   "license": "MIT"
 }

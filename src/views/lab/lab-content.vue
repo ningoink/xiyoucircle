@@ -78,6 +78,16 @@
                 </div>-->
             </div>
         </div>
+
+        <!--使用vutify分页-->
+        <div class="text-xs-center">
+            <v-pagination
+            v-model="page"
+            :length="6"
+            ></v-pagination>
+        </div>
+
+
     </section>
     
 </template>
@@ -96,7 +106,8 @@ export default {
     },
     data: function() {
         return{
-            LabDetail: LAB_DETAIL
+            LabDetail: LAB_DETAIL,
+            page: 1
         }
 }
 
