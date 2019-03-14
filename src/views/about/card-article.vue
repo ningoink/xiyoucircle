@@ -1,6 +1,5 @@
 <template>
     <section>
-        CardArticle
     </section>
 </template>
 
