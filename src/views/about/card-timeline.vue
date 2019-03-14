@@ -16,7 +16,7 @@
                         <div class="calendar">
                             <!-- icon -->&nbsp;
                         </div>
-                        <div class="date">2019-01-01</div>
+                        <div class="date">{{ item.date }}</div>
                         <div class="icon">
                             <!-- icon -->&nbsp;
                         </div>
