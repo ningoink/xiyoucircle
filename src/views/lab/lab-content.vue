@@ -25,12 +25,7 @@
                                 <i class="fa fa-tags"></i> <span>{{ detail.from }}</span>
                             </div>
                             <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>{{ detail.date }}</span>
-                            </div>
-                            <div class="content__main-content_i_bottom_icon">
-                                <i class="fa fa-github-alt fa-lg"></i>
-                                <i class="fa fa-qq fa-lg"></i>
-                                <i class="fa fa-wechat fa-lg"></i>
+                                 <span>{{ detail.date }}</span>
                             </div>
                         </div>
                     </div>
@@ -50,11 +45,7 @@
                             <div>
                                 <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
                             </div>
-                            <div class="content__main-content_i_bottom_icon">
-                                <i class="fa fa-github-alt fa-lg"></i>
-                                <i class="fa fa-qq fa-lg"></i>
-                                <i class="fa fa-wechat fa-lg"></i>
-                            </div>
+                            
                         </div>
                     </div> -->
 
@@ -75,11 +66,7 @@
                             <div>
                                 <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
                             </div>
-                            <div class="content__main-content_i_bottom_icon">
-                                <i class="fa fa-github-alt fa-lg"></i>
-                                <i class="fa fa-qq fa-lg"></i>
-                                <i class="fa fa-wechat fa-lg"></i>
-                            </div>
+                            
                         </div>
                     </div> -->
 
@@ -104,11 +91,7 @@
                             <div>
                                 <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
                             </div>
-                            <div class="content__main-content_i_bottom_icon">
-                                <i class="fa fa-github-alt fa-lg"></i>
-                                <i class="fa fa-qq fa-lg"></i>
-                                <i class="fa fa-wechat fa-lg"></i>
-                            </div>
+                            
                         </div>
                     </div> -->
 
@@ -128,11 +111,7 @@
                             <div>
                                 <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
                             </div>
-                            <div class="content__main-content_i_bottom_icon">
-                                <i class="fa fa-github-alt fa-lg"></i>
-                                <i class="fa fa-qq fa-lg"></i>
-                                <i class="fa fa-wechat fa-lg"></i>
-                            </div>
+                            
                         </div>
                     </div> -->
 
@@ -152,11 +131,7 @@
                             <div>
                                 <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
                             </div>
-                            <div class="content__main-content_i_bottom_icon">
-                                <i class="fa fa-github-alt fa-lg"></i>
-                                <i class="fa fa-qq fa-lg"></i>
-                                <i class="fa fa-wechat fa-lg"></i>
-                            </div>
+                            
                         </div>
                     </div> -->
 
@@ -181,11 +156,7 @@
                             <div>
                                 <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
                             </div>
-                            <div class="content__main-content_i_bottom_icon">
-                                <i class="fa fa-github-alt fa-lg"></i>
-                                <i class="fa fa-qq fa-lg"></i>
-                                <i class="fa fa-wechat fa-lg"></i>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -206,11 +177,7 @@
                             <div>
                                 <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
                             </div>
-                            <div class="content__main-content_i_bottom_icon">
-                                <i class="fa fa-github-alt fa-lg"></i>
-                                <i class="fa fa-qq fa-lg"></i>
-                                <i class="fa fa-wechat fa-lg"></i>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -230,11 +197,7 @@
                             <div>
                                 <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
                             </div>
-                            <div class="content__main-content_i_bottom_icon">
-                                <i class="fa fa-github-alt fa-lg"></i>
-                                <i class="fa fa-qq fa-lg"></i>
-                                <i class="fa fa-wechat fa-lg"></i>
-                            </div>
+                            
                         </div>
                     </div> -->
 
