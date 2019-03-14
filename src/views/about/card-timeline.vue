@@ -62,7 +62,7 @@ export default {
 }
 
 @mixin mq-lg {
-  @media (min-width: 1000px) {
+  @media (min-width: 1130px) {
     @content;
   }
 }
@@ -76,7 +76,7 @@ $rows: ceil($items/2);
 /* Card sizing */
 
 $card-height: 300px;
-$card-width: 500px;
+$card-width: 420px;
 $foot-height: 40px;
 $inner-margin: 15px;
 $number-size: 35px;
@@ -189,11 +189,13 @@ body {
     max-width: 94%;
     z-index: 2;
     @include mq-sm {
-      max-width: 60%;
+      //  max-width: 60%;
+      width: 60%;
       box-shadow: $box-shadow;
     }
     @include mq-md {
-      max-width: 40%;
+      //  max-width: 40%;
+      width: 60%;
     }
     @include mq-lg {
       // max-width: $card-width;
@@ -254,17 +256,9 @@ body {
         letter-spacing: 2px;
         margin: 0;
         line-height: 1rem;
-        @include mq-sm {
-          font-size: 130%;
+        @include mq-xs {
+          font-size: 100%;
           line-height: 1.2rem;
-        }
-        span {
-          display: block;
-          font-size: 0.6rem;
-          margin: 0;
-          @include mq-sm {
-            font-size: 0.8rem;
-          }
         }
       }
     }
@@ -278,8 +272,7 @@ body {
       }
       p {
         font-size: 12px;
-        line-height: 6px;
-        margin-bottom: $inner-margin;
+        margin-bottom: 6px;
       }
     }
     .foot {
