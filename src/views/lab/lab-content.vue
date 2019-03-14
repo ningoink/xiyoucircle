@@ -25,33 +25,37 @@
                                 <i class="fa fa-tags"></i> <span>{{ detail.from }}</span>
                             </div>
                             <div>
-                                 <span>{{ detail.date }}</span>
+                                 <span class="date-span">{{ detail.date }}</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- <div class="content__main-content_i">
+                    <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
-                                <p>CreatShare实验室</p>
-                                <p>实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发</p>
+                                    <p>
+                                        {{ detail.name }}
+                                     </p>
+                                     <p>
+                                        实验室方向: {{ detail.direction }}
+                                     </p>
                             </div>
                         </div>
                         <div class="content__main-content_i_bottom">
                             <div>
-                                <i class="fa fa-tags"></i> <span>计算机学院</span>
+                                <i class="fa fa-tags"></i> <span>{{ detail.from }}</span>
                             </div>
                             <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>2012.02.14</span>
+                                <i class="fa fa-calendar-minus-o"></i> <span>{{ detail.date }}</span>
                             </div>
                             
                         </div>
-                    </div> -->
+                    </div> 
 
 
                     
-                    <!-- <div class="content__main-content_i makePerfect">
+                    <div class="content__main-content_i makePerfect">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -68,7 +72,7 @@
                             </div>
                             
                         </div>
-                    </div> -->
+                    </div>
 
 
                 </div>
@@ -76,7 +80,7 @@
 
                 <div class="content__main-content_row">
 
-                    <!-- <div class="content__main-content_i">
+                    <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -93,10 +97,10 @@
                             </div>
                             
                         </div>
-                    </div> -->
+                    </div>
 
 
-                    <!-- <div class="content__main-content_i">
+                    <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -113,10 +117,10 @@
                             </div>
                             
                         </div>
-                    </div> -->
+                    </div> 
 
 
-                    <!-- <div class="content__main-content_i makePerfect">
+                     <div class="content__main-content_i makePerfect">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -133,7 +137,7 @@
                             </div>
                             
                         </div>
-                    </div> -->
+                    </div> 
 
 
                 </div>
@@ -141,7 +145,7 @@
 
                 <div class="content__main-content_row">
 
-                    <!-- <div class="content__main-content_i">
+                     <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -162,7 +166,7 @@
 
  -->
 
-                    <!-- <div class="content__main-content_i">
+                    <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -199,7 +203,7 @@
                             </div>
                             
                         </div>
-                    </div> -->
+                    </div> 
 
                     
                 </div>
@@ -221,22 +225,6 @@ export default {
         return{
             LabDetail: LAB_DETAIL
         }
-
-    //        "subtitle": [
-    //            {
-    //                "title": 'CreatShare实验室',
-    //                "smalltitle": [
-    //                    {
-    //                        "one": '实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发',
-    //                        "two": '计算机学院',
-    //                        "three": '2012.02.14'
-    //                    }
-    //                ]
-    //            }
-              
-    //        ]
-    //    }
-    
 }
 
 }
