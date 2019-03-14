@@ -3,7 +3,7 @@
     <div id="dialog">
         <div id="qqGroupQR">
             <!-- <a href="#" id="closeJoinQR" v-on:click="closeJoinQR">长按图片扫码，点我返回</a> -->
-            <a href="#" id="closeJoinQR" v-on:click="closeJoinQR">长按图片扫码，点我返回</a>
+            <a href="#" id="closeJoinQR" v-on:click="toggleQrDialog">长按图片扫码，点我返回</a>
             <img src="@/assets/index/qqGroupQR.jpg" alt="QQ群">
         </div>
     </div>
@@ -13,8 +13,8 @@
 export default {
     name: 'QrDialog',
     methods: {
-        closeJoinQR: function () {
-            // this.$emit = false
+        toggleQrDialog () {
+            this.$store.dispatch('qrDialog/toggleQrDialog')
         }
     }
 }
@@ -23,7 +23,6 @@ export default {
 
 <style scoped>
 #dialog {
-    /* display: none; */
     position: absolute;
     width: 100%;
     height: 100%;
@@ -39,7 +38,8 @@ export default {
     left: 0;
     bottom: 0;
     margin: 0px auto;
-    height: 20rem;
+    height: 450px;
+    width: 340px;
     text-align: center;
 }
 
