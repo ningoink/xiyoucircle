@@ -6,7 +6,7 @@
             <content-subheading></content-subheading>
             <lab-search></lab-search>
             <!--主内容-->
-            <div class="content__main-content" v-for="detail in LabDetail" v-bind:key="detail.id">
+            <!--<div class="content__main-content" v-for="detail in LabDetail" v-bind:key="detail.id">
                 <div class="content__main-content_row">
 
                     <div class="content__main-content_i">
@@ -75,10 +75,11 @@
                             
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
+    
 </template>
 
 <script>
