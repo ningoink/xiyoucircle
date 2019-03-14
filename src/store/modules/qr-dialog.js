@@ -8,17 +8,15 @@ const state = {
 const getters = {}
 
 const mutations = {
-    // 暂时没使用成功
-    // // 通过使用 this.$store.commit('TOGGLE_QR_DIALOG') 改变弹出框显示状态
-    // [TOGGLE_QR_DIALOG] (state) {
-    //     state.opened = !state.opened
-    // }
+    // 通过使用 this.$store.commit('qrDialog/TOGGLE_QR_DIALOG') 改变弹出框显示状态
+    [TOGGLE_QR_DIALOG] (state) {
+        state.opened = !state.opened
+    }
 }
 
 const actions = {
-    // 暂时没使用成功
     // 通过 Action 提交 mutation，而不是直接变更状态
-    // 通过 this.$store.dispatch('toggleQrDialog') 分发
+    // 通过 this.$store.dispatch('qrDialog/toggleQrDialog') 分发
     toggleQrDialog ({ commit }) {
         commit('TOGGLE_QR_DIALOG')
     }
