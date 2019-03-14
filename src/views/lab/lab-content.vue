@@ -5,14 +5,16 @@
             <!-- 标题区 -->
             <content-subheading></content-subheading>
             <!--主内容-->
-            <div class="content__main-content">
+            <div class="content__main-content" v-for="item in items" v-bind:key="item.id" v-bind:title="item.title">
                 <div class="content__main-content_row">
+
                     <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
-                                <p>CreatShare实验室</p>
-                                <p>实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发</p>
+                                     <p>
+                                        {{ item.title }}
+                                     </p>
                             </div>
                         </div>
                         <div class="content__main-content_i_bottom">
@@ -29,7 +31,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content__main-content_i">
+
+                    <!-- <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -50,8 +53,11 @@
                                 <i class="fa fa-wechat fa-lg"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="content__main-content_i makePerfect">
+                    </div> -->
+
+
+                    
+                    <!-- <div class="content__main-content_i makePerfect">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -72,10 +78,15 @@
                                 <i class="fa fa-wechat fa-lg"></i>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
+
                 </div>
+
+
                 <div class="content__main-content_row">
-                    <div class="content__main-content_i">
+
+                    <!-- <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -96,8 +107,10 @@
                                 <i class="fa fa-wechat fa-lg"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="content__main-content_i">
+                    </div> -->
+
+
+                    <!-- <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -118,8 +131,10 @@
                                 <i class="fa fa-wechat fa-lg"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="content__main-content_i makePerfect">
+                    </div> -->
+
+
+                    <!-- <div class="content__main-content_i makePerfect">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -140,10 +155,15 @@
                                 <i class="fa fa-wechat fa-lg"></i>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
+
                 </div>
+
+
                 <div class="content__main-content_row">
-                    <div class="content__main-content_i">
+
+                    <!-- <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -165,7 +185,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content__main-content_i">
+
+ -->
+
+                    <!-- <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -187,6 +210,8 @@
                             </div>
                         </div>
                     </div>
+
+
                     <div class="content__main-content_i makePerfect">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
@@ -208,7 +233,9 @@
                                 <i class="fa fa-wechat fa-lg"></i>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
+                    
                 </div>
             </div>
         </div>
@@ -222,7 +249,32 @@ export default {
     name: 'LabContent',
     components: {
         ContentSubheading
-    }
+    },
+    data: function() {
+        return{
+            items: [
+                { id: 1, title: 'CreatShare实验室'},
+                { id: 2, title: '实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发'}
+       ]
+        }
+
+    //        "subtitle": [
+    //            {
+    //                "title": 'CreatShare实验室',
+    //                "smalltitle": [
+    //                    {
+    //                        "one": '实验室方向：产品经理、产品运营、视觉设计、前端开发、后端开发',
+    //                        "two": '计算机学院',
+    //                        "three": '2012.02.14'
+    //                    }
+    //                ]
+    //            }
+              
+    //        ]
+    //    }
+    
+}
+
 }
 </script>
 
