@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .content__heading {
   margin-top: 40px;
   line-height: 20px;
