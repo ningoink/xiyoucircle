@@ -5,7 +5,7 @@
             </div>
             <!--下划线-->
             <div class="content__underline">
-                <span>—</span>
+                <span>——————</span>
             </div>
             <!--副标题-->
             <div class="content__subheading">
@@ -26,14 +26,20 @@ export default {
   line-height: 20px;
   font-size: 24px;
   color: #07111b;
+  margin-left: -100px;
+  
 }
 .content__underline {
   color: #20a0ff;
   font-size: 20px;
+  margin-left: -100px;
+  
 }
 .content__subheading {
   font-size: 16px;
   line-height: 10px;
   color: #7a7a7a;
+  margin-left: -100px;
+  
 }
 </style>

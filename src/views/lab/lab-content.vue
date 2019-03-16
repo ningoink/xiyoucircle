@@ -2,13 +2,13 @@
    <section id="lab-content" class="content">
         <!--<img src="./img/background-img2.png" alt="背景图片" class="content__background-img">-->
          <content-subheading></content-subheading>
-        <div class="content__wrap">
+        <div class="">
             <!-- 标题区 -->
            
             
             <!--主内容-->
-            <div class="content__main-content" v-for="detail in LabDetail" v-bind:key="detail.id">
-                <div class="content__main-content_row">
+            <div v-for="detail in LabDetail" v-bind:key="detail.id">
+                <div>
 
                     <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
@@ -132,7 +132,9 @@ a:hover {
   text-align: center;
   /*background: url() no-repeat center bottom;*/
   background-size: cover;
-  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 100px;
 }
 /*.content__background-img{
     margin: 0 auto;
@@ -140,6 +142,8 @@ a:hover {
 }*/
 .content__wrap {
     
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .content__heading {
@@ -166,10 +170,7 @@ a:hover {
     flex-flow: row || wrap;
     
 }
-.content__main-content_row {
-    flex: 1;
-    margin-bottom: 30px;
-}
+
 .content__main-content_i {
   width: 350px;
   height: 150px;
