@@ -1,16 +1,14 @@
 <template>
    <section id="lab-content" class="content">
         <!--<img src="./img/background-img2.png" alt="背景图片" class="content__background-img">-->
+         <!-- 标题区 -->
          <content-subheading></content-subheading>
-        <div class="">
-            <!-- 标题区 -->
-           
-            
+        <div>
             <!--主内容-->
             <div v-for="detail in LabDetail" v-bind:key="detail.id">
                 <div>
 
-                    <div class="content__main-content_i">
+                      <div class="content__main-content_i">
                         <div class="content__main-content_i_top">
                             <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
                             <div class="content__main-content_i_top_content">
@@ -31,53 +29,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!--<div class="content__main-content_i">
-                        <div class="content__main-content_i_top">
-                            <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
-                            <div class="content__main-content_i_top_content">
-                                    <p>
-                                        {{ detail.name }}
-                                     </p>
-                                     <p>
-                                        实验室方向: {{ detail.direction }}
-                                     </p>
-                            </div>
-                        </div>
-                        <div class="content__main-content_i_bottom">
-                            <div>
-                                <i class="fa fa-tags"></i> <span>{{ detail.from }}</span>
-                            </div>
-                            <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>{{ detail.date }}</span>
-                            </div>
-                            
-                        </div>
-                    </div>-->
-
-
-                  <!--<div class="content__main-content_i makePerfect">
-                        <div class="content__main-content_i_top">
-                            <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
-                            <div class="content__main-content_i_top_content">
-                                <p>
-                                        {{ detail.name }}
-                                     </p>
-                                     <p>
-                                        实验室方向: {{ detail.direction }}
-                                     </p>
-                            </div>
-                        </div>
-                        <div class="content__main-content_i_bottom">
-                            <div>
-                                <i class="fa fa-tags"></i> <span>{{ detail.from }}</span>
-                            </div>
-                            <div>
-                                <i class="fa fa-calendar-minus-o"></i> <span>{{ detail.date }}</span>
-                            </div>
-                            
-                        </div>
-                    </div>-->
                 </div>
             </div>
         </div>
@@ -109,7 +60,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 body {
   font-size: 12px;
   font-family: 'Microsoft Yahei', 'Hiragino Sans GB', Helvetica,
