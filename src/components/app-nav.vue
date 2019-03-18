@@ -1,10 +1,10 @@
 <template>
     <div>
         <header class="header">
-        <a href="./index.html" target="_self" class="header__logo">西邮开源社</a>
+        <router-link to="/" class="header__logo">西邮实验室</router-link>
         <nav class="header__nav">
-            <a href="./lab.html" target="_self" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">西邮实验室</a>
-            <a href="./about.html" target="_self" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">关于前端圈</a>
+            <router-link to="/lab" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">西邮实验室</router-link>
+            <router-link to="/about" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">关于开源社</router-link>
             <a href="#" id="openJoinQR" v-on:click="toggleQrDialog" class="header__nav-item header__nav-item_custom_button">加入我们</a>
             <div class="header__nav-item-tip"></div>
         </nav>

@@ -12,7 +12,7 @@
                         <div class="litterCardItemImgWrap"><img src="@/assets/index/lab.png" alt="西邮实验室"></div>
                         <h2>西邮实验室</h2>
                         <p>在这里，西邮的每个实验室都有了落脚之地。或在东区，或在西区；或在计算机学院，或在通信工程学院等等。快来吧，无尽的学习资源在等着你。</p>
-                        <span><a href="./lab.html" target="_self">点击进入</a></span>
+                        <span><router-link to="/lab">点击进入</router-link></span>
                     </div>
                 </div>
                 <div class="littleCardItemWrap">
@@ -20,7 +20,7 @@
                         <div class="litterCardItemImgWrap"><img src="@/assets/index/about.png" alt="关于开源社"></div>
                         <h2>关于前端圈</h2>
                         <p>西邮开源社、西邮实验室等等灵感，为什么你没有想到？推动西邮开源社发展的幕后团队到底是何方神圣？揭开面纱吧，真相掌握在你的手里。</p>
-                        <span><a href="./about.html" target="_self">点击进入</a></span>
+                        <span><router-link to="/about">点击进入</router-link></span>
                     </div>
                 </div>
                 <div class="littleCardItemWrap">
