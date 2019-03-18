@@ -1,10 +1,10 @@
 <template>
     <div>
         <header class="header">
-        <a href="./index.html" target="_self" class="header__logo">西邮开源社</a>
+        <router-link to="/" class="header__logo">西邮实验室</router-link>
         <nav class="header__nav">
-            <a href="./lab.html" target="_self" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">西邮实验室</a>
-            <a href="./about.html" target="_self" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">关于前端圈</a>
+            <router-link to="/lab" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">西邮实验室</router-link>
+            <router-link to="/about" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">关于开源社</router-link>
             <a href="#" id="openJoinQR" v-on:click="toggleQrDialog" class="header__nav-item header__nav-item_custom_button">加入我们</a>
             <div class="header__nav-item-tip"></div>
         </nav>
@@ -76,9 +76,9 @@ a:hover {
 .header__nav-item {
   float: left;
   padding: 0 20px;
-  font-size: 14px;
+  font-size: 16px;
   display: inline-block;
-  width: 80px;
+  width: 150px;
   text-align: center;
   line-height: 40px;
 }
@@ -88,7 +88,7 @@ a:hover {
   height: 2px;
   background: #20a0ff;
   position: absolute;
-  left: 20px;
+  margin-left: 15px;
   bottom: -2px;
 }
 
@@ -96,7 +96,7 @@ a:hover {
   color: #f6f6f6;
   background: #20a0ff;
   border: 1px solid #20a0ff;
-  width: 60px;
+  width: 150px;
   margin: 0 20px;
   border-radius: 5px;
   box-shadow: 1px 1px 16px 1px #20a0ff;

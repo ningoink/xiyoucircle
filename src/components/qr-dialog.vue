@@ -2,9 +2,8 @@
     <!-- 加入我们，扫码入 QQ 群，弹出框 -->
     <div id="dialog">
         <div id="qqGroupQR">
-            <!-- <a href="#" id="closeJoinQR" v-on:click="closeJoinQR">长按图片扫码，点我返回</a> -->
-            <a href="#" id="closeJoinQR" v-on:click="toggleQrDialog">长按图片扫码，点我返回</a>
             <img src="@/assets/index/qqGroupQR.jpg" alt="QQ群">
+            <a href="#" id="closeJoinQR" v-on:click="toggleQrDialog">长按图片扫码，点我返回</a>
         </div>
     </div>
 </template>
