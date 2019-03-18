@@ -76,9 +76,9 @@ a:hover {
 .header__nav-item {
   float: left;
   padding: 0 20px;
-  font-size: 14px;
+  font-size: 16px;
   display: inline-block;
-  width: 80px;
+  width: 150px;
   text-align: center;
   line-height: 40px;
 }
@@ -88,7 +88,7 @@ a:hover {
   height: 2px;
   background: #20a0ff;
   position: absolute;
-  left: 20px;
+  margin-left: 15px;
   bottom: -2px;
 }
 
@@ -96,7 +96,7 @@ a:hover {
   color: #f6f6f6;
   background: #20a0ff;
   border: 1px solid #20a0ff;
-  width: 60px;
+  width: 150px;
   margin: 0 20px;
   border-radius: 5px;
   box-shadow: 1px 1px 16px 1px #20a0ff;
