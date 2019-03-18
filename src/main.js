@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import './plugins/vuetify'
 import Vuex from 'vuex'
 import App from './App.vue'
 

@@ -1,6 +1,6 @@
 # 西邮开源社
 
-![](./public/earlyBirds.jpg)
+![](./assets/earlyBirds.jpg)
 
 本项目最终使用 Vue CLI 3 重构。
 
