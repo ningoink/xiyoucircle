@@ -1,6 +1,10 @@
 <template>
     <div id="lab">
         <app-nav></app-nav>
+        <header class="leader">
+            <h1>西邮实验室</h1>
+            <p>西安邮电大学已加盟实验室，一起打造西邮的前端实验室</p>
+        </header>
         <lab-content></lab-content>
         <app-footer></app-footer>
   </div>
@@ -27,6 +31,14 @@ body {
   font-size: 12px;
   font-family: 'Microsoft Yahei', 'Hiragino Sans GB', Helvetica,
     'Helvetica Neue', 微软雅黑, Tahoma, Arial, sans-serif;
+}
+
+.leader {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 45px;
 }
 
 a {
@@ -98,7 +110,7 @@ a:hover {
   width: 60px;
   margin: 0 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 16px 1px #20a0ff;
+  /* box-shadow: 1px 1px 16px 1px #20a0ff; */
 }
 
 .header__nav-item_custom_button:hover {
@@ -232,7 +244,8 @@ footer {
   width: 100%;
   height: 50px;
   background-color: #07111b;
-  color: #f6f6f6;
+  /* color: #f6f6f6; */
+  font-size: 15px;
   line-height: 50px;
   text-align: center;
 }

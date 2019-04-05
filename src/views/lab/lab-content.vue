@@ -1,70 +1,59 @@
 <template>
-   <section id="lab-content" class="content">
-        <!--<img src="./img/background-img2.png" alt="背景图片" class="content__background-img">-->
-         <!-- 标题区 -->
-         <content-subheading></content-subheading>
+  <section id="lab-content" class="content">
+    <!--<img src="./img/background-img2.png" alt="背景图片" class="content__background-img">-->
+    <div>
+      <!--主内容-->
+      <div v-for="detail in LabDetail" v-bind:key="detail.id">
         <div>
-            <!--主内容-->
-            <div v-for="detail in LabDetail" v-bind:key="detail.id">
-                <div>
-
-                      <div class="content__main-content_i">
-                        <div class="content__main-content_i_top">
-                            <img src="../../assets/lab/creatshare-logo.jpg" alt="" class="content__logo">
-                            <div class="content__main-content_i_top_content">
-                                     <p>
-                                        {{ detail.name }}
-                                     </p>
-                                     <p>
-                                        实验室方向: {{ detail.direction }}
-                                     </p>
-                            </div>
-                        </div>
-                        <div class="content__main-content_i_bottom">
-                            <div>
-                                <i class="fa fa-tags"></i> <span>{{ detail.from }}</span>
-                            </div>
-                            <div>
-                                 <span class="date-span">{{ detail.date }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="content__main-content_i">
+            <div class="content__main-content_i_top">
+              <img src="../../assets/lab/creatshare-logo.jpg" alt class="content__logo">
+              <div class="content__main-content_i_top_content">
+                <p>{{ detail.name }}</p>
+                <p>实验室方向: {{ detail.direction }}</p>
+              </div>
             </div>
+            <div class="content__main-content_i_bottom">
+              <div>
+                <i class="fa fa-tags"></i>
+                <span>{{ detail.from }}</span>
+              </div>
+              <div>
+                <span class="date-span">{{ detail.date }}</span>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </section>
-    
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-import ContentSubheading from '@/components/content-subheading'
-import LabSearch from '@/views/lab/lab-search'
+import LabSearch from "@/views/lab/lab-search";
 
-import { LAB_DETAIL } from '@/config/lab-detail'
+import { LAB_DETAIL } from "@/config/lab-detail";
 
 export default {
-    name: 'LabContent',
-    components: {
-        ContentSubheading,
-        LabSearch
-    },
-    data: function() {
-        return{
-            LabDetail: LAB_DETAIL,
-            page: 1
-        }
-}
-
-}
+  name: "LabContent",
+  components: {
+    LabSearch
+  },
+  data: function() {
+    return {
+      LabDetail: LAB_DETAIL,
+      page: 1
+    };
+  }
+};
 </script>
 
 
 <style scoped>
 body {
   font-size: 12px;
-  font-family: 'Microsoft Yahei', 'Hiragino Sans GB', Helvetica,
-    'Helvetica Neue', 微软雅黑, Tahoma, Arial, sans-serif;
+  font-family: "Microsoft Yahei", "Hiragino Sans GB", Helvetica,
+    "Helvetica Neue", 微软雅黑, Tahoma, Arial, sans-serif;
 }
 
 a {
@@ -77,24 +66,24 @@ a:hover {
 }
 /* 内容区 */
 .content {
+  padding-top: 45px;
   color: rgb(255, 255, 255);
-  height: 800px;
-  background-color: white;
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f7;
   text-align: center;
-  /*background: url() no-repeat center bottom;*/
   background-size: cover;
+  display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 100px;
+  border-top: 1px solid rgba(191, 191, 191, 0.4);
+  border-bottom: 1px solid rgba(191, 191, 191, 0.4);
 }
-/*.content__background-img{
-    margin: 0 auto;
-    width: 1500px;
-}*/
+
 .content__wrap {
-    
-    flex-direction: row;
-    flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .content__heading {
@@ -114,12 +103,11 @@ a:hover {
 }
 /* 主内容区 */
 .content__main-content {
-    order: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row || wrap;
-    
+  order: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row || wrap;
 }
 
 .content__main-content_i {
@@ -144,7 +132,6 @@ a:hover {
   padding: 30px 10px 10px 10px;
 }
 .content__main-content_i_top_content {
-  
 }
 .content__main-content_i_top_content p:nth-child(1) {
   font-size: 18px;
@@ -198,6 +185,4 @@ footer {
 }
 
 /*响应式*/
-
-
 </style>

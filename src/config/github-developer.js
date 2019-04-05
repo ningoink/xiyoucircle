@@ -26,4 +26,11 @@ export const GITHUB_DEVELOPER = [{
     year: '2019',
     avatar: 'https://avatars0.githubusercontent.com/u/22954581?s=460&v=4',
     github: 'https://github.com/Demoiselle7'
+}, {
+    id: 5,
+    name: '薛开麒',
+    class: '网络工程',
+    year: '2020',
+    avatar: 'https://avatars1.githubusercontent.com/u/32301956?s=460&v=4',
+    github: 'https://github.com/AqingCyan'
 }]
