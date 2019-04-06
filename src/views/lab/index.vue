@@ -25,8 +25,7 @@ export default {
 }
 </script>
 
-
-<style>
+<style scoped>
 body {
   font-size: 14px;
   font-family: 'Microsoft Yahei', 'Hiragino Sans GB', Helvetica,
