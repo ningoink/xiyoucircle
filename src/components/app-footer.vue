@@ -12,11 +12,11 @@ export default {
 
 <style scoped>
 .footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
-    line-height: 10vh;
     text-align: center;
-    height: 10vh;
+    line-height: 7vh;
+    height: 7vh;
     width: 100vw;
     background-color: #242424;
 }

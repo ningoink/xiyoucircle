@@ -31,5 +31,8 @@ export default {
 </script>
 
 <style scoped>
-
+#home {
+    position: absolute;
+    width: 100%;
+}
 </style>
