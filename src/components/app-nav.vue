@@ -1,5 +1,6 @@
 <template>
-  <nav class="nav">
+  <nav class="nav" :class="{ 'white-text': isWhite }">
+    <github-header></github-header>
     <router-link
       to="/"
       class="nav-logo"
@@ -24,29 +25,39 @@
 </template>
 
 <script>
-export default {
-  name: "AppNav",
-  methods: {
-    toggleQrDialog() {
-      this.$store.dispatch("qrDialog/toggleQrDialog");
+  import GithubHeader from '@/components/github-header'
+  export default {
+    name: "AppNav",
+    components: {
+      GithubHeader
     },
-    isNavActive(router) {
-      return this.$route.fullPath === router
+    props: {
+      isWhite: { required: false }
+    },
+    methods: {
+      toggleQrDialog() {
+        this.$store.dispatch("qrDialog/toggleQrDialog");
+      },
+      isNavActive(router) {
+        return this.$route.fullPath === router
+      }
     }
   }
-}
 </script>
 
 <style scoped>
 .nav {
-  position: relative;
+  position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   z-index: 2;
   height: 7vh;
-  /*background-color: #FAFAFA;*/
-  color: #292e35;
+  /* color: #292e35; */
+}
+
+.nav.white-text a {
+  color: white;
 }
 
 .nav-logo {
@@ -62,8 +73,7 @@ export default {
 
 .nav-dropdown {
   float: right;
-  margin: 10px 10px 0px 0px;
-  position: relative;
+  margin: 10px 72px 0px 0px;
 }
 
 .nav-item {
@@ -92,17 +102,13 @@ export default {
 }
 
 .nav-item-button {
-  color: #f6f6f6;
+  color: white;
   background: #20a0ff;
   border: 1px solid #20a0ff;
   width: 150px;
   margin: 0 20px;
   border-radius: 5px;
-  /* box-shadow: 1px 1px 16px 1px #20a0ff; */
-}
-
-.nav-item-button:hover {
-  color: #ffffff;
+  box-shadow: 1px 1px 16px 1px #20a0ff;
 }
 
 @media only screen and (max-width: 768px) {}
