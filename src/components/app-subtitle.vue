@@ -18,7 +18,7 @@
 <style scoped>
 .leader {
   text-align: center;
-  margin: 15px auto 45px;
+  margin: 75px auto 25px;
 }
 
 .heading {
