@@ -1,33 +1,68 @@
 <template>
-    <div>
-        <header class="header">
-        <router-link to="/" class="header__logo">西邮实验室</router-link>
-        <nav class="header__nav">
-            <router-link to="/lab" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">西邮实验室</router-link>
-            <router-link to="/about" class="header__nav-item header__nav-item_status_active header__nav-item_i_1">关于开源社</router-link>
-            <a href="#" id="openJoinQR" v-on:click="toggleQrDialog" class="header__nav-item header__nav-item_custom_button">加入我们</a>
-            <div class="header__nav-item-tip"></div>
-        </nav>
+  <div>
+    <header class="header">
+      <router-link to="/" class="header__logo">西邮实验室</router-link>
+      <nav class="header__nav">
+        <span @click="handleSwitch">
+          <router-link
+            to="/lab"
+            class="header__nav-item header__nav-item_status_active header__nav-item_i_1"
+          >西邮实验室</router-link>
+        </span>
+        <span @click="handleSwitch">
+          <router-link
+            to="/about"
+            class="header__nav-item header__nav-item_status_active header__nav-item_i_1"
+          >关于开源社</router-link>
+        </span>
+        <a
+          href="#"
+          id="openJoinQR"
+          v-on:click="toggleQrDialog"
+          class="header__nav-item header__nav-item_custom_button"
+        >加入我们</a>
+        <div :class="bottom_class"></div>
+      </nav>
     </header>
-    </div>
+  </div>
 </template>
 
 <script>
+import { watchFile } from "fs";
 export default {
-    name: 'AppNav',
-     methods: {
-        toggleQrDialog () {
-            this.$store.dispatch('qrDialog/toggleQrDialog')
-        }
-     }
-}
+  data() {
+    return {
+      bottom_class: "header__nav-item-tip_left"
+    };
+  },
+  name: "AppNav",
+  methods: {
+    toggleQrDialog() {
+      this.$store.dispatch("qrDialog/toggleQrDialog");
+    },
+    handleSwitch() {
+      if (this.$route.fullPath === "/lab") {
+        this.bottom_class = "header__nav-item-tip_left";
+      } else if (this.$route.fullPath === "/about") {
+        this.bottom_class = "header__nav-item-tip_right";
+      }
+    }
+  },
+  mounted() {
+    if (this.$route.fullPath === "/lab") {
+      this.bottom_class = "header__nav-item-tip_left";
+    } else if (this.$route.fullPath === "/about") {
+      this.bottom_class = "header__nav-item-tip_right";
+    }
+  }
+};
 </script>
 
 <style scoped>
 body {
   font-size: 12px;
-  font-family: 'Microsoft Yahei', 'Hiragino Sans GB', Helvetica,
-    'Helvetica Neue', 微软雅黑, Tahoma, Arial, sans-serif;
+  font-family: "Microsoft Yahei", "Hiragino Sans GB", Helvetica,
+    "Helvetica Neue", 微软雅黑, Tahoma, Arial, sans-serif;
 }
 
 a {
@@ -57,7 +92,7 @@ a:hover {
   height: 40px;
   margin: 10px 0px 0px 60px;
   padding: 0px 0px 0px 50px;
-  background: url('../assets/logo.png') left center no-repeat;
+  background: url("../assets/logo.png") left center no-repeat;
   display: block;
   font-size: 18px;
   line-height: 40px;
@@ -83,12 +118,21 @@ a:hover {
   line-height: 40px;
 }
 
-.header__nav-item-tip {
+.header__nav-item-tip_left {
   width: 80px;
   height: 2px;
   background: #20a0ff;
   position: absolute;
-  margin-left: 15px;
+  margin-left: 35px;
+  bottom: -2px;
+}
+
+.header__nav-item-tip_right {
+  width: 80px;
+  height: 2px;
+  background: #20a0ff;
+  position: absolute;
+  margin-left: 185px;
   bottom: -2px;
 }
 
@@ -99,11 +143,14 @@ a:hover {
   width: 150px;
   margin: 0 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 16px 1px #20a0ff;
+  /* box-shadow: 1px 1px 16px 1px #20a0ff; */
 }
 
 .header__nav-item_custom_button:hover {
   color: #ffffff;
 }
+
+/*响应式*/
+@media only screen and (max-width: 768px) {}
 </style>
 
