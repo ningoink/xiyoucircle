@@ -30,6 +30,6 @@ export default {
 <style scoped>
 #lab {
   min-height: 100%;
-  position: absolute;
+  position: absolute;;
 }
 </style>
