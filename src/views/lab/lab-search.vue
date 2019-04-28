@@ -1,14 +1,7 @@
 <template>
-<div>
-      <!--实验室搜索input框-->
     <div class="search_input">
         <p>实验室搜索</p>
-        
-        
-  </div>
-
-</div>
-    
+    </div> 
 </template>
 
 <script>
