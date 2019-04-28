@@ -60,7 +60,7 @@ export default {
 $container-width: 960px;
 
 #developer {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     .img-wrap {
         display: flex;
         flex-direction: row;
@@ -75,6 +75,7 @@ $container-width: 960px;
         }
         .img-card {
             flex: 1;
+            margin-top: 30px;
             height: 200px;
             min-width: 300px;
             max-width: 300px;
@@ -83,9 +84,9 @@ $container-width: 960px;
             justify-content: center;
             align-items: center;
             position: relative;
-            bottom: 30px;
+            bottom: 20px;
             .img-item {
-                padding-top: 60px;
+                // padding-top: 60px;
                 min-height: 120px;
                 max-height: 120px;
                 min-width: 120px;
