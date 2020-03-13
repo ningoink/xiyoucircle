@@ -10,7 +10,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "start": "npm run serve"
+    "start": "npm run serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "main": "",
   "dependencies": {
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-service": "^3.5.0",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
