@@ -1,10 +1,10 @@
 <template>
     <div id="about">
         <app-nav></app-nav>
-        <header class="leader">
-            <h1>关于开源社</h1>
-            <p>西邮开源社从灵感到上线，都发生了什么？</p>
-        </header>
+        <app-subtitle
+          heading="关于开源社"
+          subheading="西邮开源社从灵感到上线，都发生了什么？"
+        ></app-subtitle>
         <card-timeline></card-timeline>
         <card-article></card-article>
         <card-developer></card-developer>
@@ -14,6 +14,7 @@
 
 <script>
 import AppNav from '@/components/app-nav'
+import AppSubtitle from '@/components/app-subtitle'
 import CardTimeline from './card-timeline'
 import CardArticle from './card-article'
 import CardDeveloper from './card-developer'
@@ -23,6 +24,7 @@ export default {
     name: 'About',
     components: {
         AppNav,
+        AppSubtitle,
         CardTimeline,
         CardArticle,
         CardDeveloper,
@@ -32,17 +34,8 @@ export default {
 </script>
 
 <style scoped>
-body {
-  font-size: 14px;
-  font-family: 'Microsoft Yahei', 'Hiragino Sans GB', Helvetica,
-    'Helvetica Neue', 微软雅黑, Tahoma, Arial, sans-serif;
-}
-
-.leader {
-    text-align: center;
-    max-width: 90%;
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 45px;
+#about {
+  width: 100%;
+  position: absolute;
 }
 </style>

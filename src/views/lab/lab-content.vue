@@ -52,8 +52,6 @@ export default {
 <style scoped>
 /* 内容区 */
 .content {
-  padding-top: 45px;
-  padding-bottom: 45px;
   color: rgb(255, 255, 255);
   height: 100%;
   width: 100%;
@@ -63,6 +61,7 @@ export default {
   border-top: 1px solid rgba(191, 191, 191, 0.4);
   border-bottom: 1px solid rgba(191, 191, 191, 0.4);
   overflow: hidden;
+  padding-bottom: 7vh;
 }
 
 .content_main {
@@ -79,7 +78,7 @@ export default {
   height: 160px;
   margin: 20px;
   background: white;
-  border-left: 7px solid palevioletred;
+  border-left: 7px solid #20a0ff;
 }
 
 .content__main-content_i_top {
