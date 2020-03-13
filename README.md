@@ -43,10 +43,11 @@
 
 # 核心贡献者
 
-* [韩亦乐@hylerrix](https://github.com/hylerrix)
-* [野味狼果@WolfGirlM](https://github.com/WolfGirlM)
-* [王智@Joe19970619](https://github.com/Joe19970619)
-* [王玥珂@Demoiselle7](https://github.com/Demoiselle7)
+* [@hylerrix](https://github.com/hylerrix)
+* [@WolfGirlM](https://github.com/WolfGirlM)
+* [@Joe19970619](https://github.com/Joe19970619)
+* [@Demoiselle7](https://github.com/Demoiselle7)
+* [@AqingCyan](https://github.com/AqingCyan)
 
 # 加入我们
 

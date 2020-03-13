@@ -127,7 +127,6 @@ $marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
   }
 }
 
-
 /* Some Cool Stuff */
 
 $counter: $items - $rows + 2;
@@ -135,18 +134,6 @@ $counter: $items - $rows + 2;
   .demo-card:nth-child(#{$i*2-1})   { order: $i }
   .demo-card:nth-child(#{$i*2})     { order: $counter }
   $counter: $counter + 1;
-}
-
-/* Border Box */
-
-* {
-  box-sizing: border-box;
-}
-
-/* Fonts */
-
-body {
-  font-family: Roboto;
 }
 
 #timeline {
