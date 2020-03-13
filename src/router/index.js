@@ -7,7 +7,7 @@ Vue.use(Vuetify)
 Vue.use(Router)
 
 const routes = new Router({
-  mode: 'history',
+  mode: 'hash',
   routes: [
     {
       path: '/',
